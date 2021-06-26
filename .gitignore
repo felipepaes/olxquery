@@ -5,11 +5,6 @@
 ### Custom ###
 TODO.md
 NOTES.md
-pagination.html
-no_pagination.html
-devutils/locations
-devutils/data
-app.py
 Pipfile.lock
 
 ### Django ###
