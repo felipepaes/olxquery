@@ -1,0 +1,115 @@
+[
+  {
+    "DDD_71": {
+      "class_name": "DDD_71",
+      "name": "Salvador",
+      "full_url": "https://ba.olx.com.br/grande-salvador",
+      "partial_url": "grande-salvador",
+      "zones": [
+        {
+          "Salvador": {
+            "zone_id": "1",
+            "zone_name": "Salvador",
+            "class_name": "Salvador",
+            "full_url": "https://ba.olx.com.br/grande-salvador/salvador",
+            "partial_url": "grande-salvador/salvador"
+          }
+        },
+        {
+          "GrandeSalvador": {
+            "zone_id": "94",
+            "zone_name": "Grande Salvador",
+            "class_name": "GrandeSalvador",
+            "full_url": "https://ba.olx.com.br/grande-salvador/grande-salvador",
+            "partial_url": "grande-salvador/grande-salvador"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "110",
+            "zone_name": "Outras cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://ba.olx.com.br/grande-salvador/outras-cidades",
+            "partial_url": "grande-salvador/outras-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_73": {
+      "class_name": "DDD_73",
+      "name": "Sul da Bahia",
+      "full_url": "https://ba.olx.com.br/sul-da-bahia",
+      "partial_url": "sul-da-bahia",
+      "zones": [
+        {
+          "TodasAsCidades": {
+            "zone_id": "8733",
+            "zone_name": "Todas as cidades",
+            "class_name": "TodasAsCidades",
+            "full_url": "https://ba.olx.com.br/sul-da-bahia/todas-as-cidades",
+            "partial_url": "sul-da-bahia/todas-as-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_74": {
+      "class_name": "DDD_74",
+      "name": "Juazeiro, Jacobina e região",
+      "full_url": "https://ba.olx.com.br/regiao-de-juazeiro-e-jacobina",
+      "partial_url": "regiao-de-juazeiro-e-jacobina",
+      "zones": [
+        {
+          "TodasAsCidades": {
+            "zone_id": "9040",
+            "zone_name": "Todas as cidades",
+            "class_name": "TodasAsCidades",
+            "full_url": "https://ba.olx.com.br/regiao-de-juazeiro-e-jacobina/todas-as-cidades",
+            "partial_url": "regiao-de-juazeiro-e-jacobina/todas-as-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_75": {
+      "class_name": "DDD_75",
+      "name": "F. de Santana, Alagoinhas e região",
+      "full_url": "https://ba.olx.com.br/regiao-de-feira-de-santana-e-alagoinhas",
+      "partial_url": "regiao-de-feira-de-santana-e-alagoinhas",
+      "zones": [
+        {
+          "TodasAsCidades": {
+            "zone_id": "11945",
+            "zone_name": "Todas as cidades",
+            "class_name": "TodasAsCidades",
+            "full_url": "https://ba.olx.com.br/regiao-de-feira-de-santana-e-alagoinhas/todas-as-cidades",
+            "partial_url": "regiao-de-feira-de-santana-e-alagoinhas/todas-as-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_77": {
+      "class_name": "DDD_77",
+      "name": "V da Conquista, Barreiras e região",
+      "full_url": "https://ba.olx.com.br/regiao-de-vitoria-da-conquista-e-barreiras",
+      "partial_url": "regiao-de-vitoria-da-conquista-e-barreiras",
+      "zones": [
+        {
+          "TodasAsCidades": {
+            "zone_id": "11344",
+            "zone_name": "Todas as cidades",
+            "class_name": "TodasAsCidades",
+            "full_url": "https://ba.olx.com.br/regiao-de-vitoria-da-conquista-e-barreiras/todas-as-cidades",
+            "partial_url": "regiao-de-vitoria-da-conquista-e-barreiras/todas-as-cidades"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "DDD_47": {
+      "class_name": "DDD_47",
+      "name": "Norte de Santa Catarina",
+      "full_url": "https://sc.olx.com.br/norte-de-santa-catarina",
+      "partial_url": "norte-de-santa-catarina",
+      "zones": [
+        {
+          "RegiaoDeJoinvilleENorteDoEstado": {
+            "zone_id": "2481",
+            "zone_name": "Região de Joinville e Norte do Estado",
+            "class_name": "RegiaoDeJoinvilleENorteDoEstado",
+            "full_url": "https://sc.olx.com.br/norte-de-santa-catarina/regiao-de-joinville-e-norte-do-estado",
+            "partial_url": "norte-de-santa-catarina/regiao-de-joinville-e-norte-do-estado"
+          }
+        },
+        {
+          "RegiaoDoValeDoItajai": {
+            "zone_id": "2426",
+            "zone_name": "Região do Vale do Itajaí",
+            "class_name": "RegiaoDoValeDoItajai",
+            "full_url": "https://sc.olx.com.br/norte-de-santa-catarina/regiao-do-vale-do-itajai",
+            "partial_url": "norte-de-santa-catarina/regiao-do-vale-do-itajai"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_48": {
+      "class_name": "DDD_48",
+      "name": "Florianópolis e região",
+      "full_url": "https://sc.olx.com.br/florianopolis-e-regiao",
+      "partial_url": "florianopolis-e-regiao",
+      "zones": [
+        {
+          "Centro": {
+            "zone_id": "2561",
+            "zone_name": "Centro",
+            "class_name": "Centro",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/centro",
+            "partial_url": "florianopolis-e-regiao/centro"
+          }
+        },
+        {
+          "Continente": {
+            "zone_id": "2519",
+            "zone_name": "Continente",
+            "class_name": "Continente",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/continente",
+            "partial_url": "florianopolis-e-regiao/continente"
+          }
+        },
+        {
+          "Leste": {
+            "zone_id": "2619",
+            "zone_name": "Leste",
+            "class_name": "Leste",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/leste",
+            "partial_url": "florianopolis-e-regiao/leste"
+          }
+        },
+        {
+          "Norte": {
+            "zone_id": "2541",
+            "zone_name": "Norte",
+            "class_name": "Norte",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/norte",
+            "partial_url": "florianopolis-e-regiao/norte"
+          }
+        },
+        {
+          "Sul": {
+            "zone_id": "2531",
+            "zone_name": "Sul",
+            "class_name": "Sul",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/sul",
+            "partial_url": "florianopolis-e-regiao/sul"
+          }
+        },
+        {
+          "GrandeFlorianopolis": {
+            "zone_id": "2506",
+            "zone_name": "Grande Florianópolis",
+            "class_name": "GrandeFlorianopolis",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/grande-florianopolis",
+            "partial_url": "florianopolis-e-regiao/grande-florianopolis"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "2566",
+            "zone_name": "Outras cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://sc.olx.com.br/florianopolis-e-regiao/outras-cidades",
+            "partial_url": "florianopolis-e-regiao/outras-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_49": {
+      "class_name": "DDD_49",
+      "name": "Oeste de Santa Catarina",
+      "full_url": "https://sc.olx.com.br/oeste-de-santa-catarina",
+      "partial_url": "oeste-de-santa-catarina",
+      "zones": [
+        {
+          "RegiaoDeChapeco": {
+            "zone_id": "2333",
+            "zone_name": "Região de Chapecó",
+            "class_name": "RegiaoDeChapeco",
+            "full_url": "https://sc.olx.com.br/oeste-de-santa-catarina/regiao-de-chapeco",
+            "partial_url": "oeste-de-santa-catarina/regiao-de-chapeco"
+          }
+        },
+        {
+          "RegiaoDeJoacaba": {
+            "zone_id": "2303",
+            "zone_name": "Região de Joaçaba",
+            "class_name": "RegiaoDeJoacaba",
+            "full_url": "https://sc.olx.com.br/oeste-de-santa-catarina/regiao-de-joacaba",
+            "partial_url": "oeste-de-santa-catarina/regiao-de-joacaba"
+          }
+        },
+        {
+          "RegiaoDeXanxereEConcordia": {
+            "zone_id": "2393",
+            "zone_name": "Região de Xanxerê e Concórdia",
+            "class_name": "RegiaoDeXanxereEConcordia",
+            "full_url": "https://sc.olx.com.br/oeste-de-santa-catarina/regiao-de-xanxere-e-concordia",
+            "partial_url": "oeste-de-santa-catarina/regiao-de-xanxere-e-concordia"
+          }
+        },
+        {
+          "RegioesDeCuritibanosECDosLages": {
+            "zone_id": "2272",
+            "zone_name": "Regiões de Curitibanos e C. dos Lages",
+            "class_name": "RegioesDeCuritibanosECDosLages",
+            "full_url": "https://sc.olx.com.br/oeste-de-santa-catarina/regioes-de-curitibanos-e-c-dos-lages",
+            "partial_url": "oeste-de-santa-catarina/regioes-de-curitibanos-e-c-dos-lages"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "DDD_83": {
+      "class_name": "DDD_83",
+      "name": "Paraíba",
+      "full_url": "https://pb.olx.com.br/paraíba",
+      "partial_url": "paraíba",
+      "zones": [
+        {
+          "JoaoPessoa": {
+            "zone_id": "4794",
+            "zone_name": "João Pessoa",
+            "class_name": "JoaoPessoa",
+            "full_url": "https://pb.olx.com.br/paraiba/joao-pessoa",
+            "partial_url": "paraiba/joao-pessoa"
+          }
+        },
+        {
+          "CampinaGrandeGuarabiraERegiao": {
+            "zone_id": "4797",
+            "zone_name": "Campina Grande, Guarabira e região",
+            "class_name": "CampinaGrandeGuarabiraERegiao",
+            "full_url": "https://pb.olx.com.br/paraiba/campina-grande-guarabira-e-regiao",
+            "partial_url": "paraiba/campina-grande-guarabira-e-regiao"
+          }
+        },
+        {
+          "MonteiroPicuiERegiao": {
+            "zone_id": "4796",
+            "zone_name": "Monteiro, Picuí e região",
+            "class_name": "MonteiroPicuiERegiao",
+            "full_url": "https://pb.olx.com.br/paraiba/monteiro-picui-e-regiao",
+            "partial_url": "paraiba/monteiro-picui-e-regiao"
+          }
+        },
+        {
+          "PatosSousaERegiao": {
+            "zone_id": "4795",
+            "zone_name": "Patos, Sousa e região",
+            "class_name": "PatosSousaERegiao",
+            "full_url": "https://pb.olx.com.br/paraiba/patos-sousa-e-regiao",
+            "partial_url": "paraiba/patos-sousa-e-regiao"
+          }
+        },
+        {
+          "SantaRitaBayeuxERegiao": {
+            "zone_id": "4798",
+            "zone_name": "Santa Rita, Bayeux e região",
+            "class_name": "SantaRitaBayeuxERegiao",
+            "full_url": "https://pb.olx.com.br/paraiba/santa-rita-bayeux-e-regiao",
+            "partial_url": "paraiba/santa-rita-bayeux-e-regiao"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "DDD_84": {
+      "class_name": "DDD_84",
+      "name": "Rio Grande do Norte",
+      "full_url": "https://rn.olx.com.br/rio-grande-do-norte",
+      "partial_url": "rio-grande-do-norte",
+      "zones": [
+        {
+          "Natal": {
+            "zone_id": "6823",
+            "zone_name": "Natal",
+            "class_name": "Natal",
+            "full_url": "https://rn.olx.com.br/rio-grande-do-norte/natal",
+            "partial_url": "rio-grande-do-norte/natal"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "6821",
+            "zone_name": "Outras Cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://rn.olx.com.br/rio-grande-do-norte/outras-cidades",
+            "partial_url": "rio-grande-do-norte/outras-cidades"
+          }
+        }
+      ]
+    }
+  }
+]

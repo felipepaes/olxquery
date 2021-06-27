@@ -1,0 +1,49 @@
+[
+  {
+    "DDD_86": {
+      "class_name": "DDD_86",
+      "name": "Teresina, Parnaíba e região",
+      "full_url": "https://pi.olx.com.br/regiao-de-teresina-e-parnaiba",
+      "partial_url": "regiao-de-teresina-e-parnaiba",
+      "zones": [
+        {
+          "Teresina": {
+            "zone_id": "9891",
+            "zone_name": "Teresina",
+            "class_name": "Teresina",
+            "full_url": "https://pi.olx.com.br/regiao-de-teresina-e-parnaiba/teresina",
+            "partial_url": "regiao-de-teresina-e-parnaiba/teresina"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "9889",
+            "zone_name": "Outras Cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://pi.olx.com.br/regiao-de-teresina-e-parnaiba/outras-cidades",
+            "partial_url": "regiao-de-teresina-e-parnaiba/outras-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_89": {
+      "class_name": "DDD_89",
+      "name": "Picos, Floriano e região",
+      "full_url": "https://pi.olx.com.br/regiao-de-picos-e-floriano",
+      "partial_url": "regiao-de-picos-e-floriano",
+      "zones": [
+        {
+          "TodasAsCidades": {
+            "zone_id": "10091",
+            "zone_name": "Todas as cidades",
+            "class_name": "TodasAsCidades",
+            "full_url": "https://pi.olx.com.br/regiao-de-picos-e-floriano/todas-as-cidades",
+            "partial_url": "regiao-de-picos-e-floriano/todas-as-cidades"
+          }
+        }
+      ]
+    }
+  }
+]

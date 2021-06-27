@@ -1,0 +1,57 @@
+[
+  {
+    "DDD_67": {
+      "class_name": "DDD_67",
+      "name": "Mato Grosso do Sul",
+      "full_url": "https://ms.olx.com.br/mato-grosso-do-sul",
+      "partial_url": "mato-grosso-do-sul",
+      "zones": [
+        {
+          "CampoGrande": {
+            "zone_id": "3807",
+            "zone_name": "Campo Grande",
+            "class_name": "CampoGrande",
+            "full_url": "https://ms.olx.com.br/mato-grosso-do-sul/campo-grande",
+            "partial_url": "mato-grosso-do-sul/campo-grande"
+          }
+        },
+        {
+          "Corumba": {
+            "zone_id": "3779",
+            "zone_name": "Corumbá",
+            "class_name": "Corumba",
+            "full_url": "https://ms.olx.com.br/mato-grosso-do-sul/corumba",
+            "partial_url": "mato-grosso-do-sul/corumba"
+          }
+        },
+        {
+          "Dourados": {
+            "zone_id": "3942",
+            "zone_name": "Dourados",
+            "class_name": "Dourados",
+            "full_url": "https://ms.olx.com.br/mato-grosso-do-sul/dourados",
+            "partial_url": "mato-grosso-do-sul/dourados"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "3867",
+            "zone_name": "Outras cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://ms.olx.com.br/mato-grosso-do-sul/outras-cidades",
+            "partial_url": "mato-grosso-do-sul/outras-cidades"
+          }
+        },
+        {
+          "TresLagoas": {
+            "zone_id": "4026",
+            "zone_name": "Três Lagoas",
+            "class_name": "TresLagoas",
+            "full_url": "https://ms.olx.com.br/mato-grosso-do-sul/tres-lagoas",
+            "partial_url": "mato-grosso-do-sul/tres-lagoas"
+          }
+        }
+      ]
+    }
+  }
+]

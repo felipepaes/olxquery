@@ -2,7 +2,7 @@ from pprint import pprint
 from unidecode import unidecode
 import json
 from pathlib import Path
-
+import re
 from lxml import html
 import requests
 
@@ -70,6 +70,8 @@ def build_tree(content):
     return tree
 
 
+# Locations
+
 def scrape_ufs():
     data = get(BASE_URL)
     tree = build_tree(data.text)
@@ -101,12 +103,15 @@ def scrape_regions(url):
             full_url = link.xpath('./@href')[0]
             partial_url = full_url.split("/")[-1]
         except:
-            tab_title = tree.xpath(
-                '//div[@id = "column-main-content"]/div[2]/div/div/li[3]/span/text()')[0]
+            # tab_title = tree.xpath(
+                # '//div[@id = "column-main-content"]/div[2]/div/div/li[3]/span/text()')[0]
+            tab_title = tree.xpath('//li[contains(@class, "wodqy3-0 ezfpNd")]/span/text()')[0]
             code = tab_title[:6].replace(" ", "_")
             name = tab_title[9:]
             partial_url = name.casefold().replace(" ", "-")
             full_url = f"{url}/{partial_url}"
+
+        if (len(state_ddds) > 0 and state_ddds[0][0] == code): return state_ddds
 
         state_ddds.append((code, {
             "class_name": code,
@@ -115,6 +120,8 @@ def scrape_regions(url):
             "partial_url": partial_url,
             "zones": [],
         }))
+
+
     return state_ddds
 
 
@@ -131,8 +138,7 @@ def scrape_zones(url):
     for link in links:
         zone_id = link.xpath('./@data-lurker_zone')[0]
         zone_name = link.xpath('./text()')[0]
-        class_name = unidecode(zone_name.title().replace(
-            " ", ""))
+        class_name = unidecode(re.sub(r'[\s\-,\.]', '', zone_name.title()))
         full_url = link.xpath('./@href')[0]
         partial_url = full_url[url_offset:]
 
@@ -165,9 +171,11 @@ def export_json(filename, data):
 
 def dump_locations():
     for uf in STATES:
+        basedir = Path(__file__).resolve().parent
+        filename = basedir / 'data' / f'{uf}_location'
         try:
             regions = scrape_regions_with_zones(uf)
-            export_json(f"data/{uf}_location", regions)
+            export_json(filename, regions)
         except:
             print("Problema no scraping do uf: ", uf)
 
@@ -222,3 +230,32 @@ def generate_location_file(uf):
         f.write(result)
 
     print(f"----- {uf}.py file generated -----")
+
+
+# Categories
+
+def scrape_categories(url='https://www.olx.com.br/brasil'):
+    data = get(url)
+    tree = build_tree(data.text)
+    links = tree.xpath('//a[contains(@data-lurker-detail, "search_category")]')
+
+    categories = []
+
+    for link in links:
+        category_name = link.xpath('./@title')[0]
+        class_name = unidecode(re.sub(r'[\s\-,\.]', '', category_name.title()))
+        full_url = link.xpath('./@href')[0]
+        partial_url = full_url.split('/').pop()
+
+        categories.append((category_name, {
+            'category_name': category_name,
+            'class_name': class_name,
+            'full_url': full_url,
+            'partial_url': partial_url
+        }))
+
+    return categories
+
+
+dump_locations()
+for uf in STATES: generate_location_file(uf)

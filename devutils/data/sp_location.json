@@ -1,0 +1,524 @@
+[
+  {
+    "DDD_11": {
+      "class_name": "DDD_11",
+      "name": "São Paulo e região",
+      "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao",
+      "partial_url": "sao-paulo-e-regiao",
+      "zones": [
+        {
+          "Centro": {
+            "zone_id": "2807",
+            "zone_name": "Centro",
+            "class_name": "Centro",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/centro",
+            "partial_url": "sao-paulo-e-regiao/centro"
+          }
+        },
+        {
+          "ZonaLeste": {
+            "zone_id": "2873",
+            "zone_name": "Zona Leste",
+            "class_name": "ZonaLeste",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/zona-leste",
+            "partial_url": "sao-paulo-e-regiao/zona-leste"
+          }
+        },
+        {
+          "ZonaNorte": {
+            "zone_id": "2778",
+            "zone_name": "Zona Norte",
+            "class_name": "ZonaNorte",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/zona-norte",
+            "partial_url": "sao-paulo-e-regiao/zona-norte"
+          }
+        },
+        {
+          "ZonaOeste": {
+            "zone_id": "2908",
+            "zone_name": "Zona Oeste",
+            "class_name": "ZonaOeste",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/zona-oeste",
+            "partial_url": "sao-paulo-e-regiao/zona-oeste"
+          }
+        },
+        {
+          "ZonaSul": {
+            "zone_id": "2820",
+            "zone_name": "Zona Sul",
+            "class_name": "ZonaSul",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/zona-sul",
+            "partial_url": "sao-paulo-e-regiao/zona-sul"
+          }
+        },
+        {
+          "Abcd": {
+            "zone_id": "2773",
+            "zone_name": "ABCD",
+            "class_name": "Abcd",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/abcd",
+            "partial_url": "sao-paulo-e-regiao/abcd"
+          }
+        },
+        {
+          "AlphavilleETambore": {
+            "zone_id": "2936",
+            "zone_name": "Alphaville e Tamboré",
+            "class_name": "AlphavilleETambore",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/alphaville-e-tambore",
+            "partial_url": "sao-paulo-e-regiao/alphaville-e-tambore"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "2939",
+            "zone_name": "Outras cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/outras-cidades",
+            "partial_url": "sao-paulo-e-regiao/outras-cidades"
+          }
+        },
+        {
+          "Interior": {
+            "zone_id": "2769",
+            "zone_name": "Interior",
+            "class_name": "Interior",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/interior",
+            "partial_url": "sao-paulo-e-regiao/interior"
+          }
+        },
+        {
+          "RegiaoDeBraganca": {
+            "zone_id": "2757",
+            "zone_name": "Região de Bragança",
+            "class_name": "RegiaoDeBraganca",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/regiao-de-braganca",
+            "partial_url": "sao-paulo-e-regiao/regiao-de-braganca"
+          }
+        },
+        {
+          "RegiaoDeJundiai": {
+            "zone_id": "2802",
+            "zone_name": "Região de Jundiaí",
+            "class_name": "RegiaoDeJundiai",
+            "full_url": "https://sp.olx.com.br/sao-paulo-e-regiao/regiao-de-jundiai",
+            "partial_url": "sao-paulo-e-regiao/regiao-de-jundiai"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_12": {
+      "class_name": "DDD_12",
+      "name": "V. do Paraíba e Litoral Norte",
+      "full_url": "https://sp.olx.com.br/vale-do-paraiba-e-litoral-norte",
+      "partial_url": "vale-do-paraiba-e-litoral-norte",
+      "zones": [
+        {
+          "LitoralNorte": {
+            "zone_id": "3139",
+            "zone_name": "Litoral Norte",
+            "class_name": "LitoralNorte",
+            "full_url": "https://sp.olx.com.br/vale-do-paraiba-e-litoral-norte/litoral-norte",
+            "partial_url": "vale-do-paraiba-e-litoral-norte/litoral-norte"
+          }
+        },
+        {
+          "RegiaoDeCamposDoJordao": {
+            "zone_id": "3103",
+            "zone_name": "Região de Campos do Jordão",
+            "class_name": "RegiaoDeCamposDoJordao",
+            "full_url": "https://sp.olx.com.br/vale-do-paraiba-e-litoral-norte/regiao-de-campos-do-jordao",
+            "partial_url": "vale-do-paraiba-e-litoral-norte/regiao-de-campos-do-jordao"
+          }
+        },
+        {
+          "ValeDoParaiba": {
+            "zone_id": "3108",
+            "zone_name": "Vale do Paraíba",
+            "class_name": "ValeDoParaiba",
+            "full_url": "https://sp.olx.com.br/vale-do-paraiba-e-litoral-norte/vale-do-paraiba",
+            "partial_url": "vale-do-paraiba-e-litoral-norte/vale-do-paraiba"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_13": {
+      "class_name": "DDD_13",
+      "name": "Baixada Santista e Litoral Sul",
+      "full_url": "https://sp.olx.com.br/baixada-santista-e-litoral-sul",
+      "partial_url": "baixada-santista-e-litoral-sul",
+      "zones": [
+        {
+          "LitoralSul": {
+            "zone_id": "3418",
+            "zone_name": "Litoral Sul",
+            "class_name": "LitoralSul",
+            "full_url": "https://sp.olx.com.br/baixada-santista-e-litoral-sul/litoral-sul",
+            "partial_url": "baixada-santista-e-litoral-sul/litoral-sul"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "3433",
+            "zone_name": "Outras cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://sp.olx.com.br/baixada-santista-e-litoral-sul/outras-cidades",
+            "partial_url": "baixada-santista-e-litoral-sul/outras-cidades"
+          }
+        },
+        {
+          "RegiaoDeSantos": {
+            "zone_id": "3426",
+            "zone_name": "Região de Santos",
+            "class_name": "RegiaoDeSantos",
+            "full_url": "https://sp.olx.com.br/baixada-santista-e-litoral-sul/regiao-de-santos",
+            "partial_url": "baixada-santista-e-litoral-sul/regiao-de-santos"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_14": {
+      "class_name": "DDD_14",
+      "name": "Bauru, Marília e região",
+      "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia",
+      "partial_url": "regiao-de-bauru-e-marilia",
+      "zones": [
+        {
+          "RegiaoDeAvare": {
+            "zone_id": "3242",
+            "zone_name": "Região de Avaré",
+            "class_name": "RegiaoDeAvare",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-avare",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-avare"
+          }
+        },
+        {
+          "RegiaoDeBauru": {
+            "zone_id": "3191",
+            "zone_name": "Região de Bauru",
+            "class_name": "RegiaoDeBauru",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-bauru",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-bauru"
+          }
+        },
+        {
+          "RegiaoDeBotucatu": {
+            "zone_id": "3182",
+            "zone_name": "Região de Botucatu",
+            "class_name": "RegiaoDeBotucatu",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-botucatu",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-botucatu"
+          }
+        },
+        {
+          "RegiaoDeJau": {
+            "zone_id": "3167",
+            "zone_name": "Região de Jaú",
+            "class_name": "RegiaoDeJau",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-jau",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-jau"
+          }
+        },
+        {
+          "RegiaoDeLins": {
+            "zone_id": "3233",
+            "zone_name": "Região de Lins",
+            "class_name": "RegiaoDeLins",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-lins",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-lins"
+          }
+        },
+        {
+          "RegiaoDeMarilia": {
+            "zone_id": "3213",
+            "zone_name": "Região de Marília",
+            "class_name": "RegiaoDeMarilia",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-marilia",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-marilia"
+          }
+        },
+        {
+          "RegiaoDeOurinhos": {
+            "zone_id": "3144",
+            "zone_name": "Região de Ourinhos",
+            "class_name": "RegiaoDeOurinhos",
+            "full_url": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/regiao-de-ourinhos",
+            "partial_url": "regiao-de-bauru-e-marilia/regiao-de-ourinhos"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_15": {
+      "class_name": "DDD_15",
+      "name": "Sorocaba e região",
+      "full_url": "https://sp.olx.com.br/regiao-de-sorocaba",
+      "partial_url": "regiao-de-sorocaba",
+      "zones": [
+        {
+          "RegiaoDeCapaoBonito": {
+            "zone_id": "3251",
+            "zone_name": "Região de Capão Bonito",
+            "class_name": "RegiaoDeCapaoBonito",
+            "full_url": "https://sp.olx.com.br/regiao-de-sorocaba/regiao-de-capao-bonito",
+            "partial_url": "regiao-de-sorocaba/regiao-de-capao-bonito"
+          }
+        },
+        {
+          "RegiaoDeItapetininga": {
+            "zone_id": "3300",
+            "zone_name": "Região de Itapetininga",
+            "class_name": "RegiaoDeItapetininga",
+            "full_url": "https://sp.olx.com.br/regiao-de-sorocaba/regiao-de-itapetininga",
+            "partial_url": "regiao-de-sorocaba/regiao-de-itapetininga"
+          }
+        },
+        {
+          "RegiaoDeItapeva": {
+            "zone_id": "3278",
+            "zone_name": "Região de Itapeva",
+            "class_name": "RegiaoDeItapeva",
+            "full_url": "https://sp.olx.com.br/regiao-de-sorocaba/regiao-de-itapeva",
+            "partial_url": "regiao-de-sorocaba/regiao-de-itapeva"
+          }
+        },
+        {
+          "RegiaoDePiedadeEIbiuna": {
+            "zone_id": "3272",
+            "zone_name": "Região de Piedade e Ibiúna",
+            "class_name": "RegiaoDePiedadeEIbiuna",
+            "full_url": "https://sp.olx.com.br/regiao-de-sorocaba/regiao-de-piedade-e-ibiuna",
+            "partial_url": "regiao-de-sorocaba/regiao-de-piedade-e-ibiuna"
+          }
+        },
+        {
+          "RegiaoDeSorocaba": {
+            "zone_id": "3263",
+            "zone_name": "Região de Sorocaba",
+            "class_name": "RegiaoDeSorocaba",
+            "full_url": "https://sp.olx.com.br/regiao-de-sorocaba/regiao-de-sorocaba",
+            "partial_url": "regiao-de-sorocaba/regiao-de-sorocaba"
+          }
+        },
+        {
+          "RegiaoDeTatui": {
+            "zone_id": "3289",
+            "zone_name": "Região de Tatuí",
+            "class_name": "RegiaoDeTatui",
+            "full_url": "https://sp.olx.com.br/regiao-de-sorocaba/regiao-de-tatui",
+            "partial_url": "regiao-de-sorocaba/regiao-de-tatui"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_16": {
+      "class_name": "DDD_16",
+      "name": "Ribeirão Preto e região",
+      "full_url": "https://sp.olx.com.br/regiao-de-ribeirao-preto",
+      "partial_url": "regiao-de-ribeirao-preto",
+      "zones": [
+        {
+          "RegiaoDeAraraquara": {
+            "zone_id": "3570",
+            "zone_name": "Região de Araraquara",
+            "class_name": "RegiaoDeAraraquara",
+            "full_url": "https://sp.olx.com.br/regiao-de-ribeirao-preto/regiao-de-araraquara",
+            "partial_url": "regiao-de-ribeirao-preto/regiao-de-araraquara"
+          }
+        },
+        {
+          "RegiaoDeFranca": {
+            "zone_id": "3520",
+            "zone_name": "Região de Franca",
+            "class_name": "RegiaoDeFranca",
+            "full_url": "https://sp.olx.com.br/regiao-de-ribeirao-preto/regiao-de-franca",
+            "partial_url": "regiao-de-ribeirao-preto/regiao-de-franca"
+          }
+        },
+        {
+          "RegiaoDeJaboticabal": {
+            "zone_id": "3586",
+            "zone_name": "Região de Jaboticabal",
+            "class_name": "RegiaoDeJaboticabal",
+            "full_url": "https://sp.olx.com.br/regiao-de-ribeirao-preto/regiao-de-jaboticabal",
+            "partial_url": "regiao-de-ribeirao-preto/regiao-de-jaboticabal"
+          }
+        },
+        {
+          "RegiaoDeRibeiraoPreto": {
+            "zone_id": "3548",
+            "zone_name": "Região de Ribeirão Preto",
+            "class_name": "RegiaoDeRibeiraoPreto",
+            "full_url": "https://sp.olx.com.br/regiao-de-ribeirao-preto/regiao-de-ribeirao-preto",
+            "partial_url": "regiao-de-ribeirao-preto/regiao-de-ribeirao-preto"
+          }
+        },
+        {
+          "RegiaoDeSaoCarlos": {
+            "zone_id": "3597",
+            "zone_name": "Região de São Carlos",
+            "class_name": "RegiaoDeSaoCarlos",
+            "full_url": "https://sp.olx.com.br/regiao-de-ribeirao-preto/regiao-de-sao-carlos",
+            "partial_url": "regiao-de-ribeirao-preto/regiao-de-sao-carlos"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_17": {
+      "class_name": "DDD_17",
+      "name": "S. José do Rio Preto e região",
+      "full_url": "https://sp.olx.com.br/regiao-de-sao-jose-do-rio-preto",
+      "partial_url": "regiao-de-sao-jose-do-rio-preto",
+      "zones": [
+        {
+          "RegiaoDeBarretos": {
+            "zone_id": "3055",
+            "zone_name": "Região de Barretos",
+            "class_name": "RegiaoDeBarretos",
+            "full_url": "https://sp.olx.com.br/regiao-de-sao-jose-do-rio-preto/regiao-de-barretos",
+            "partial_url": "regiao-de-sao-jose-do-rio-preto/regiao-de-barretos"
+          }
+        },
+        {
+          "RegiaoDeCatanduva": {
+            "zone_id": "3035",
+            "zone_name": "Região de Catanduva",
+            "class_name": "RegiaoDeCatanduva",
+            "full_url": "https://sp.olx.com.br/regiao-de-sao-jose-do-rio-preto/regiao-de-catanduva",
+            "partial_url": "regiao-de-sao-jose-do-rio-preto/regiao-de-catanduva"
+          }
+        },
+        {
+          "RegiaoDeJalesEVotuporanga": {
+            "zone_id": "2982",
+            "zone_name": "Região de Jales e Votuporanga",
+            "class_name": "RegiaoDeJalesEVotuporanga",
+            "full_url": "https://sp.olx.com.br/regiao-de-sao-jose-do-rio-preto/regiao-de-jales-e-votuporanga",
+            "partial_url": "regiao-de-sao-jose-do-rio-preto/regiao-de-jales-e-votuporanga"
+          }
+        },
+        {
+          "RegiaoDeSaoJoseDoRioPreto": {
+            "zone_id": "3066",
+            "zone_name": "Região de São José do Rio Preto",
+            "class_name": "RegiaoDeSaoJoseDoRioPreto",
+            "full_url": "https://sp.olx.com.br/regiao-de-sao-jose-do-rio-preto/regiao-de-sao-jose-do-rio-preto",
+            "partial_url": "regiao-de-sao-jose-do-rio-preto/regiao-de-sao-jose-do-rio-preto"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_18": {
+      "class_name": "DDD_18",
+      "name": "Presidente Prudente e região",
+      "full_url": "https://sp.olx.com.br/regiao-de-presidente-prudente",
+      "partial_url": "regiao-de-presidente-prudente",
+      "zones": [
+        {
+          "PresPrudenteAracatubaERegiao": {
+            "zone_id": "3306",
+            "zone_name": "Pres. Prudente, Araçatuba e região",
+            "class_name": "PresPrudenteAracatubaERegiao",
+            "full_url": "https://sp.olx.com.br/regiao-de-presidente-prudente/pres-prudente-aracatuba-e-regiao",
+            "partial_url": "regiao-de-presidente-prudente/pres-prudente-aracatuba-e-regiao"
+          }
+        },
+        {
+          "RegiaoDeAdamantinaEDracena": {
+            "zone_id": "3393",
+            "zone_name": "Região de Adamantina e Dracena",
+            "class_name": "RegiaoDeAdamantinaEDracena",
+            "full_url": "https://sp.olx.com.br/regiao-de-presidente-prudente/regiao-de-adamantina-e-dracena",
+            "partial_url": "regiao-de-presidente-prudente/regiao-de-adamantina-e-dracena"
+          }
+        },
+        {
+          "RegiaoDeAracatuba": {
+            "zone_id": "3337",
+            "zone_name": "Região de Araçatuba",
+            "class_name": "RegiaoDeAracatuba",
+            "full_url": "https://sp.olx.com.br/regiao-de-presidente-prudente/regiao-de-aracatuba",
+            "partial_url": "regiao-de-presidente-prudente/regiao-de-aracatuba"
+          }
+        },
+        {
+          "RegiaoDeAssis": {
+            "zone_id": "3376",
+            "zone_name": "Região de Assis",
+            "class_name": "RegiaoDeAssis",
+            "full_url": "https://sp.olx.com.br/regiao-de-presidente-prudente/regiao-de-assis",
+            "partial_url": "regiao-de-presidente-prudente/regiao-de-assis"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_19": {
+      "class_name": "DDD_19",
+      "name": "Grande Campinas",
+      "full_url": "https://sp.olx.com.br/grande-campinas",
+      "partial_url": "grande-campinas",
+      "zones": [
+        {
+          "MogiMirinEPirrassununga": {
+            "zone_id": "3485",
+            "zone_name": "Mogi Mirin e Pirrassununga",
+            "class_name": "MogiMirinEPirrassununga",
+            "full_url": "https://sp.olx.com.br/grande-campinas/mogi-mirin-e-pirrassununga",
+            "partial_url": "grande-campinas/mogi-mirin-e-pirrassununga"
+          }
+        },
+        {
+          "RegiaoDeCampinas": {
+            "zone_id": "3448",
+            "zone_name": "Região de Campinas",
+            "class_name": "RegiaoDeCampinas",
+            "full_url": "https://sp.olx.com.br/grande-campinas/regiao-de-campinas",
+            "partial_url": "grande-campinas/regiao-de-campinas"
+          }
+        },
+        {
+          "RegiaoDeLimeira": {
+            "zone_id": "3465",
+            "zone_name": "Região de Limeira",
+            "class_name": "RegiaoDeLimeira",
+            "full_url": "https://sp.olx.com.br/grande-campinas/regiao-de-limeira",
+            "partial_url": "grande-campinas/regiao-de-limeira"
+          }
+        },
+        {
+          "RegiaoDePiracicaba": {
+            "zone_id": "3474",
+            "zone_name": "Região de Piracicaba",
+            "class_name": "RegiaoDePiracicaba",
+            "full_url": "https://sp.olx.com.br/grande-campinas/regiao-de-piracicaba",
+            "partial_url": "grande-campinas/regiao-de-piracicaba"
+          }
+        },
+        {
+          "RegiaoDeRioClaro": {
+            "zone_id": "3443",
+            "zone_name": "Região de Rio Claro",
+            "class_name": "RegiaoDeRioClaro",
+            "full_url": "https://sp.olx.com.br/grande-campinas/regiao-de-rio-claro",
+            "partial_url": "grande-campinas/regiao-de-rio-claro"
+          }
+        }
+      ]
+    }
+  }
+]

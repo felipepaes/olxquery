@@ -1,0 +1,30 @@
+[
+  {
+    "DDD_68": {
+      "class_name": "DDD_68",
+      "name": "Acre",
+      "full_url": "https://ac.olx.com.br/acre",
+      "partial_url": "acre",
+      "zones": [
+        {
+          "RioBranco": {
+            "zone_id": "6408",
+            "zone_name": "Rio Branco",
+            "class_name": "RioBranco",
+            "full_url": "https://ac.olx.com.br/acre/rio-branco",
+            "partial_url": "acre/rio-branco"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "6406",
+            "zone_name": "Outras Cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://ac.olx.com.br/acre/outras-cidades",
+            "partial_url": "acre/outras-cidades"
+          }
+        }
+      ]
+    }
+  }
+]
