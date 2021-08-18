@@ -1,0 +1,44 @@
+{
+  "category_name": "Imóveis",
+  "class_name": "Imoveis",
+  "full_url": "https://www.olx.com.br/imoveis",
+  "partial_url": "imoveis",
+  "subcategories": [
+    {
+      "name": "Venda - casas e apartamentos",
+      "class_name": "VendaCasasEApartamentos",
+      "full_url": "https://www.olx.com.br/imoveis/venda",
+      "partial_url": "imoveis/venda"
+    },
+    {
+      "name": "Terrenos, sítios e fazendas",
+      "class_name": "TerrenosSitiosEFazendas",
+      "full_url": "https://www.olx.com.br/imoveis/terrenos",
+      "partial_url": "imoveis/terrenos"
+    },
+    {
+      "name": "Comércio e indústria",
+      "class_name": "ComercioEIndustria",
+      "full_url": "https://www.olx.com.br/imoveis/comercio-e-industria",
+      "partial_url": "imoveis/comercio-e-industria"
+    },
+    {
+      "name": "Aluguel - casas e apartamentos",
+      "class_name": "AluguelCasasEApartamentos",
+      "full_url": "https://www.olx.com.br/imoveis/aluguel",
+      "partial_url": "imoveis/aluguel"
+    },
+    {
+      "name": "Temporada",
+      "class_name": "Temporada",
+      "full_url": "https://www.olx.com.br/imoveis/temporada",
+      "partial_url": "imoveis/temporada"
+    },
+    {
+      "name": "Lançamentos",
+      "class_name": "Lancamentos",
+      "full_url": "https://www.olx.com.br/imoveis/lancamentos",
+      "partial_url": "imoveis/lancamentos"
+    }
+  ]
+}

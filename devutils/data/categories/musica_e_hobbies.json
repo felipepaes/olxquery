@@ -1,0 +1,38 @@
+{
+  "category_name": "Música e hobbies",
+  "class_name": "MusicaEHobbies",
+  "full_url": "https://www.olx.com.br/musica-e-hobbies",
+  "partial_url": "musica-e-hobbies",
+  "subcategories": [
+    {
+      "name": "Hobbies e coleções",
+      "class_name": "HobbiesEColecoes",
+      "full_url": "https://www.olx.com.br/hobbies-e-colecoes",
+      "partial_url": "hobbies-e-colecoes"
+    },
+    {
+      "name": "Instrumentos musicais",
+      "class_name": "InstrumentosMusicais",
+      "full_url": "https://www.olx.com.br/instrumentos-musicais",
+      "partial_url": "instrumentos-musicais"
+    },
+    {
+      "name": "Livros e revistas",
+      "class_name": "LivrosERevistas",
+      "full_url": "https://www.olx.com.br/livros-e-revistas",
+      "partial_url": "livros-e-revistas"
+    },
+    {
+      "name": "CDs, DVDs etc",
+      "class_name": "CdsDvdsEtc",
+      "full_url": "https://www.olx.com.br/cds-dvds",
+      "partial_url": "cds-dvds"
+    },
+    {
+      "name": "Antiguidades",
+      "class_name": "Antiguidades",
+      "full_url": "https://www.olx.com.br/antiguidades",
+      "partial_url": "antiguidades"
+    }
+  ]
+}

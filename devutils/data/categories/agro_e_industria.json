@@ -1,0 +1,50 @@
+{
+  "category_name": "Agro e indústria",
+  "class_name": "AgroEIndustria",
+  "full_url": "https://www.olx.com.br/agro-e-industria",
+  "partial_url": "agro-e-industria",
+  "subcategories": [
+    {
+      "name": "Outros itens para agro e indústria",
+      "class_name": "OutrosItensParaAgroEIndustria",
+      "full_url": "https://www.olx.com.br/agro-e-industria/outros-itens-para-agro-e-industria",
+      "partial_url": "agro-e-industria/outros-itens-para-agro-e-industria"
+    },
+    {
+      "name": "Produção Rural",
+      "class_name": "ProducaoRural",
+      "full_url": "https://www.olx.com.br/agro-e-industria/producao-rural",
+      "partial_url": "agro-e-industria/producao-rural"
+    },
+    {
+      "name": "Máquinas para produção industrial",
+      "class_name": "MaquinasParaProducaoIndustrial",
+      "full_url": "https://www.olx.com.br/agro-e-industria/maquinas-para-producao-industrial",
+      "partial_url": "agro-e-industria/maquinas-para-producao-industrial"
+    },
+    {
+      "name": "Tratores e máquinas agrícolas",
+      "class_name": "TratoresEMaquinasAgricolas",
+      "full_url": "https://www.olx.com.br/agro-e-industria/tratores-e-maquinas-agricolas",
+      "partial_url": "agro-e-industria/tratores-e-maquinas-agricolas"
+    },
+    {
+      "name": "Máquinas pesadas para construção",
+      "class_name": "MaquinasPesadasParaConstrucao",
+      "full_url": "https://www.olx.com.br/agro-e-industria/maquinas-pesadas-para-construcao",
+      "partial_url": "agro-e-industria/maquinas-pesadas-para-construcao"
+    },
+    {
+      "name": "Animais para agropecuária",
+      "class_name": "AnimaisParaAgropecuaria",
+      "full_url": "https://www.olx.com.br/agro-e-industria/animais-para-agropecuaria",
+      "partial_url": "agro-e-industria/animais-para-agropecuaria"
+    },
+    {
+      "name": "Peças para tratores e máquinas",
+      "class_name": "PecasParaTratoresEMaquinas",
+      "full_url": "https://www.olx.com.br/agro-e-industria/pecas-para-tratores-e-maquinas",
+      "partial_url": "agro-e-industria/pecas-para-tratores-e-maquinas"
+    }
+  ]
+}

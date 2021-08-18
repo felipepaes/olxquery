@@ -1,0 +1,32 @@
+{
+  "category_name": "Moda e beleza",
+  "class_name": "ModaEBeleza",
+  "full_url": "https://www.olx.com.br/moda-e-beleza",
+  "partial_url": "moda-e-beleza",
+  "subcategories": [
+    {
+      "name": "Roupas e calçados",
+      "class_name": "RoupasECalcados",
+      "full_url": "https://www.olx.com.br/roupas-e-calcados",
+      "partial_url": "roupas-e-calcados"
+    },
+    {
+      "name": "Bijouterias, relógios e acessórios",
+      "class_name": "BijouteriasRelogiosEAcessorios",
+      "full_url": "https://www.olx.com.br/bijouteria-relogios-e-acessorios",
+      "partial_url": "bijouteria-relogios-e-acessorios"
+    },
+    {
+      "name": "Beleza e saúde",
+      "class_name": "BelezaESaude",
+      "full_url": "https://www.olx.com.br/beleza-e-saude",
+      "partial_url": "beleza-e-saude"
+    },
+    {
+      "name": "Bolsas, malas e mochilas",
+      "class_name": "BolsasMalasEMochilas",
+      "full_url": "https://www.olx.com.br/bolsas-malas-e-mochilas",
+      "partial_url": "bolsas-malas-e-mochilas"
+    }
+  ]
+}

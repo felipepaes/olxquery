@@ -1,0 +1,38 @@
+{
+  "category_name": "Para a sua casa",
+  "class_name": "ParaASuaCasa",
+  "full_url": "https://www.olx.com.br/para-a-sua-casa",
+  "partial_url": "para-a-sua-casa",
+  "subcategories": [
+    {
+      "name": "Móveis",
+      "class_name": "Moveis",
+      "full_url": "https://www.olx.com.br/moveis",
+      "partial_url": "moveis"
+    },
+    {
+      "name": "Eletrodomésticos",
+      "class_name": "Eletrodomesticos",
+      "full_url": "https://www.olx.com.br/eletrodomesticos",
+      "partial_url": "eletrodomesticos"
+    },
+    {
+      "name": "Utilidades domésticas",
+      "class_name": "UtilidadesDomesticas",
+      "full_url": "https://www.olx.com.br/utilidades-domesticas",
+      "partial_url": "utilidades-domesticas"
+    },
+    {
+      "name": "Materiais de construção e jardim",
+      "class_name": "MateriaisDeConstrucaoEJardim",
+      "full_url": "https://www.olx.com.br/materiais-de-construcao-e-jardim",
+      "partial_url": "materiais-de-construcao-e-jardim"
+    },
+    {
+      "name": "Objetos de decoração",
+      "class_name": "ObjetosDeDecoracao",
+      "full_url": "https://www.olx.com.br/objetos-de-decoracao",
+      "partial_url": "objetos-de-decoracao"
+    }
+  ]
+}

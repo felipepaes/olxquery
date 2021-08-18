@@ -1,0 +1,26 @@
+{
+  "category_name": "Comércio e escritório",
+  "class_name": "ComercioEEscritorio",
+  "full_url": "https://www.olx.com.br/comercio-e-escritorio",
+  "partial_url": "comercio-e-escritorio",
+  "subcategories": [
+    {
+      "name": "Outros itens para comércio e escritório",
+      "class_name": "OutrosItensParaComercioEEscritorio",
+      "full_url": "https://www.olx.com.br/comercio-e-escritorio/outros-itens-para-comercio-e-escritorio",
+      "partial_url": "comercio-e-escritorio/outros-itens-para-comercio-e-escritorio"
+    },
+    {
+      "name": "Equipamentos e mobiliário",
+      "class_name": "EquipamentosEMobiliario",
+      "full_url": "https://www.olx.com.br/comercio-e-escritorio/equipamentos-e-mobiliario",
+      "partial_url": "comercio-e-escritorio/equipamentos-e-mobiliario"
+    },
+    {
+      "name": "Trailers e carrinhos comerciais",
+      "class_name": "TrailersECarrinhosComerciais",
+      "full_url": "https://www.olx.com.br/comercio-e-escritorio/trailers-e-carrinhos-comerciais",
+      "partial_url": "comercio-e-escritorio/trailers-e-carrinhos-comerciais"
+    }
+  ]
+}

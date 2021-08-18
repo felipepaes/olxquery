@@ -1,0 +1,32 @@
+{
+  "category_name": "Eletrônicos e celulares",
+  "class_name": "EletronicosECelulares",
+  "full_url": "https://www.olx.com.br/eletronicos-e-celulares",
+  "partial_url": "eletronicos-e-celulares",
+  "subcategories": [
+    {
+      "name": "Celulares e telefonia",
+      "class_name": "CelularesETelefonia",
+      "full_url": "https://www.olx.com.br/celulares",
+      "partial_url": "celulares"
+    },
+    {
+      "name": "Computadores e acessórios",
+      "class_name": "ComputadoresEAcessorios",
+      "full_url": "https://www.olx.com.br/computadores-e-acessorios",
+      "partial_url": "computadores-e-acessorios"
+    },
+    {
+      "name": "Áudio, TV, vídeo e fotografia",
+      "class_name": "AudioTvVideoEFotografia",
+      "full_url": "https://www.olx.com.br/audio-tv-video-e-fotografia",
+      "partial_url": "audio-tv-video-e-fotografia"
+    },
+    {
+      "name": "Videogames",
+      "class_name": "Videogames",
+      "full_url": "https://www.olx.com.br/videogames",
+      "partial_url": "videogames"
+    }
+  ]
+}

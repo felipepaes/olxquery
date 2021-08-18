@@ -1,0 +1,44 @@
+{
+  "category_name": "Animais de estimação",
+  "class_name": "AnimaisDeEstimacao",
+  "full_url": "https://www.olx.com.br/animais-de-estimacao",
+  "partial_url": "animais-de-estimacao",
+  "subcategories": [
+    {
+      "name": "Cachorros",
+      "class_name": "Cachorros",
+      "full_url": "https://www.olx.com.br/animais-de-estimacao/cachorros",
+      "partial_url": "animais-de-estimacao/cachorros"
+    },
+    {
+      "name": "Outros animais",
+      "class_name": "OutrosAnimais",
+      "full_url": "https://www.olx.com.br/animais-de-estimacao/outros-animais",
+      "partial_url": "animais-de-estimacao/outros-animais"
+    },
+    {
+      "name": "Gatos",
+      "class_name": "Gatos",
+      "full_url": "https://www.olx.com.br/animais-de-estimacao/gatos",
+      "partial_url": "animais-de-estimacao/gatos"
+    },
+    {
+      "name": "Cavalos",
+      "class_name": "Cavalos",
+      "full_url": "https://www.olx.com.br/animais-de-estimacao/cavalos",
+      "partial_url": "animais-de-estimacao/cavalos"
+    },
+    {
+      "name": "Roedores",
+      "class_name": "Roedores",
+      "full_url": "https://www.olx.com.br/animais-de-estimacao/roedores",
+      "partial_url": "animais-de-estimacao/roedores"
+    },
+    {
+      "name": "Aquários e acessórios",
+      "class_name": "AquariosEAcessorios",
+      "full_url": "https://www.olx.com.br/animais-de-estimacao/aquarios-e-acessorios",
+      "partial_url": "animais-de-estimacao/aquarios-e-acessorios"
+    }
+  ]
+}

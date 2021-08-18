@@ -1,0 +1,20 @@
+{
+  "category_name": "Esportes e lazer",
+  "class_name": "EsportesELazer",
+  "full_url": "https://www.olx.com.br/esportes-e-lazer",
+  "partial_url": "esportes-e-lazer",
+  "subcategories": [
+    {
+      "name": "Ciclismo",
+      "class_name": "Ciclismo",
+      "full_url": "https://www.olx.com.br/ciclismo",
+      "partial_url": "ciclismo"
+    },
+    {
+      "name": "Esportes e ginástica",
+      "class_name": "EsportesEGinastica",
+      "full_url": "https://www.olx.com.br/esportes-e-ginastica",
+      "partial_url": "esportes-e-ginastica"
+    }
+  ]
+}
