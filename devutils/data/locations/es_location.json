@@ -1,0 +1,121 @@
+[
+  {
+    "DDD_27": {
+      "class_name": "DDD_27",
+      "name": "Norte do Espírito Santo",
+      "full_url": "https://es.olx.com.br/norte-do-espirito-santo",
+      "partial_url": "norte-do-espirito-santo",
+      "zones": [
+        {
+          "Vitoria": {
+            "zone_id": "1805",
+            "zone_name": "Vitória",
+            "class_name": "Vitoria",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/vitoria",
+            "partial_url": "norte-do-espirito-santo/vitoria"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "1932",
+            "zone_name": "Outras cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/outras-cidades",
+            "partial_url": "norte-do-espirito-santo/outras-cidades"
+          }
+        },
+        {
+          "VilaVelha": {
+            "zone_id": "1937",
+            "zone_name": "Vila Velha",
+            "class_name": "VilaVelha",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/vila-velha",
+            "partial_url": "norte-do-espirito-santo/vila-velha"
+          }
+        },
+        {
+          "AfonsoClaudioERegiao": {
+            "zone_id": "1795",
+            "zone_name": "Afonso Cláudio e região",
+            "class_name": "AfonsoClaudioERegiao",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/afonso-claudio-e-regiao",
+            "partial_url": "norte-do-espirito-santo/afonso-claudio-e-regiao"
+          }
+        },
+        {
+          "GuarapariERegiao": {
+            "zone_id": "1801",
+            "zone_name": "Guarapari e região",
+            "class_name": "GuarapariERegiao",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/guarapari-e-regiao",
+            "partial_url": "norte-do-espirito-santo/guarapari-e-regiao"
+          }
+        },
+        {
+          "RegiaoDeColatinaENovaVenecia": {
+            "zone_id": "1889",
+            "zone_name": "Região de Colatina e Nova Venécia",
+            "class_name": "RegiaoDeColatinaENovaVenecia",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/regiao-de-colatina-e-nova-venecia",
+            "partial_url": "norte-do-espirito-santo/regiao-de-colatina-e-nova-venecia"
+          }
+        },
+        {
+          "RegiaoDeLinharesESaoMateus": {
+            "zone_id": "1908",
+            "zone_name": "Região de Linhares e São Mateus",
+            "class_name": "RegiaoDeLinharesESaoMateus",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/regiao-de-linhares-e-sao-mateus",
+            "partial_url": "norte-do-espirito-santo/regiao-de-linhares-e-sao-mateus"
+          }
+        },
+        {
+          "SantaTeresaERegiao": {
+            "zone_id": "1925",
+            "zone_name": "Santa Teresa e região",
+            "class_name": "SantaTeresaERegiao",
+            "full_url": "https://es.olx.com.br/norte-do-espirito-santo/santa-teresa-e-regiao",
+            "partial_url": "norte-do-espirito-santo/santa-teresa-e-regiao"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_28": {
+      "class_name": "DDD_28",
+      "name": "Sul do Espírito Santo",
+      "full_url": "https://es.olx.com.br/sul-do-espirito-santo",
+      "partial_url": "sul-do-espirito-santo",
+      "zones": [
+        {
+          "AfonsoClaudioERegiao": {
+            "zone_id": "2032",
+            "zone_name": "Afonso Cláudio e região",
+            "class_name": "AfonsoClaudioERegiao",
+            "full_url": "https://es.olx.com.br/sul-do-espirito-santo/afonso-claudio-e-regiao",
+            "partial_url": "sul-do-espirito-santo/afonso-claudio-e-regiao"
+          }
+        },
+        {
+          "CachoeiroDeItapemirimERegiaoSul": {
+            "zone_id": "2041",
+            "zone_name": "Cachoeiro de Itapemirim e Região sul",
+            "class_name": "CachoeiroDeItapemirimERegiaoSul",
+            "full_url": "https://es.olx.com.br/sul-do-espirito-santo/cachoeiro-de-itapemirim-e-regiao-sul",
+            "partial_url": "sul-do-espirito-santo/cachoeiro-de-itapemirim-e-regiao-sul"
+          }
+        },
+        {
+          "GuarapariERegiao": {
+            "zone_id": "2035",
+            "zone_name": "Guarapari e região",
+            "class_name": "GuarapariERegiao",
+            "full_url": "https://es.olx.com.br/sul-do-espirito-santo/guarapari-e-regiao",
+            "partial_url": "sul-do-espirito-santo/guarapari-e-regiao"
+          }
+        }
+      ]
+    }
+  }
+]

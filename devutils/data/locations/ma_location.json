@@ -1,0 +1,49 @@
+[
+  {
+    "DDD_98": {
+      "class_name": "DDD_98",
+      "name": "Região de São Luís",
+      "full_url": "https://ma.olx.com.br/regiao-de-sao-luis",
+      "partial_url": "regiao-de-sao-luis",
+      "zones": [
+        {
+          "SaoLuis": {
+            "zone_id": "11551",
+            "zone_name": "São Luís",
+            "class_name": "SaoLuis",
+            "full_url": "https://ma.olx.com.br/regiao-de-sao-luis/sao-luis",
+            "partial_url": "regiao-de-sao-luis/sao-luis"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "11549",
+            "zone_name": "Outras Cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://ma.olx.com.br/regiao-de-sao-luis/outras-cidades",
+            "partial_url": "regiao-de-sao-luis/outras-cidades"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "DDD_99": {
+      "class_name": "DDD_99",
+      "name": "Imperatriz, Caxias e região",
+      "full_url": "https://ma.olx.com.br/regiao-de-imperatriz-e-caxias",
+      "partial_url": "regiao-de-imperatriz-e-caxias",
+      "zones": [
+        {
+          "TodasAsCidades": {
+            "zone_id": "10823",
+            "zone_name": "Todas as cidades",
+            "class_name": "TodasAsCidades",
+            "full_url": "https://ma.olx.com.br/regiao-de-imperatriz-e-caxias/todas-as-cidades",
+            "partial_url": "regiao-de-imperatriz-e-caxias/todas-as-cidades"
+          }
+        }
+      ]
+    }
+  }
+]

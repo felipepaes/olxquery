@@ -1,0 +1,30 @@
+[
+  {
+    "DDD_79": {
+      "class_name": "DDD_79",
+      "name": "Sergipe",
+      "full_url": "https://se.olx.com.br/sergipe",
+      "partial_url": "sergipe",
+      "zones": [
+        {
+          "Aracaju": {
+            "zone_id": "7400",
+            "zone_name": "Aracaju",
+            "class_name": "Aracaju",
+            "full_url": "https://se.olx.com.br/sergipe/aracaju",
+            "partial_url": "sergipe/aracaju"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "7398",
+            "zone_name": "Outras Cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://se.olx.com.br/sergipe/outras-cidades",
+            "partial_url": "sergipe/outras-cidades"
+          }
+        }
+      ]
+    }
+  }
+]

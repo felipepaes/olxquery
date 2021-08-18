@@ -1,0 +1,30 @@
+[
+  {
+    "DDD_96": {
+      "class_name": "DDD_96",
+      "name": "Amapá",
+      "full_url": "https://ap.olx.com.br/amapá",
+      "partial_url": "amapá",
+      "zones": [
+        {
+          "Macapa": {
+            "zone_id": "6741",
+            "zone_name": "Macapá",
+            "class_name": "Macapa",
+            "full_url": "https://ap.olx.com.br/amapa/macapa",
+            "partial_url": "amapa/macapa"
+          }
+        },
+        {
+          "OutrasCidades": {
+            "zone_id": "6739",
+            "zone_name": "Outras Cidades",
+            "class_name": "OutrasCidades",
+            "full_url": "https://ap.olx.com.br/amapa/outras-cidades",
+            "partial_url": "amapa/outras-cidades"
+          }
+        }
+      ]
+    }
+  }
+]
