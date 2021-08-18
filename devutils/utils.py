@@ -5,6 +5,7 @@ from pathlib import Path
 import re
 from lxml import html
 import requests
+from os import listdir
 
 
 # TODO: create a factory function to instantiate the right Query accordinglly
@@ -56,6 +57,21 @@ STATES_URLS = {'ac': 'https://ac.olx.com.br',
                'se': 'https://se.olx.com.br',
                'sp': 'https://sp.olx.com.br',
                'to': 'https://to.olx.com.br'}
+
+CATEGORIES_FILENAMES = ['agro_e_industria.json',
+                        'animais_de_estimacao.json',
+                        'artigos_infantis.json',
+                        'autos_e_pecas.json',
+                        'comercio_e_escritorio.json',
+                        'eletronicos_e_celulares.json',
+                        'esportes_e_lazer.json',
+                        'imoveis.json',
+                        'moda_e_beleza.json',
+                        'musica_e_hobbies.json',
+                        'para_a_sua_casa.json',
+                        'servicos.json',
+                        'vagas_de_emprego.json'
+]
 
 
 def get(url):
@@ -172,7 +188,7 @@ def export_json(filename, data):
 def dump_locations():
     for uf in STATES:
         basedir = Path(__file__).resolve().parent
-        filename = basedir / 'data' / f'{uf}_location'
+        filename = basedir / 'data' / 'locations' /f'{uf}_location'
         try:
             regions = scrape_regions_with_zones(uf)
             export_json(filename, regions)
@@ -251,11 +267,106 @@ def scrape_categories(url='https://www.olx.com.br/brasil'):
             'category_name': category_name,
             'class_name': class_name,
             'full_url': full_url,
-            'partial_url': partial_url
+            'partial_url': partial_url,
+            'subcategories': []
         }))
 
     return categories
 
 
-dump_locations()
-for uf in STATES: generate_location_file(uf)
+def scrape_subcategories(url):
+    data = get(url)
+    tree = build_tree(data.text)
+    links = tree.xpath('//div[@id="left-side-main-content"]//a[contains(@class, "iBlkWc")]')
+
+    subcategories = []
+
+    offset = len('https://www.olx.com.br/')
+
+    for link in links:
+        name = link.xpath('./@title')[0]
+        class_name = unidecode(re.sub(r'[\s\-,\.]', '', name.title()))
+        full_url = str(link.xpath('./@href')[0])
+        partial_url = full_url[offset:]
+    
+        subcategories.append({
+            'name': name,
+            'class_name': class_name,
+            'full_url': full_url,
+            'partial_url': partial_url
+        })
+
+    return subcategories
+
+
+def scrape_categories_and_subcategories():
+    result = []
+    categories = scrape_categories()
+    for category in categories:
+        category_url = category[1]["full_url"]
+        subcategories = scrape_subcategories(category_url)
+        for subcategory in subcategories:
+            category[1]["subcategories"].append(subcategory)
+        result.append(category[1])
+    return result
+
+
+def dump_categories():
+    try:
+        categories = scrape_categories_and_subcategories()
+    except:
+        print("Problema no scraping das categorias")
+
+    for category in categories:
+        basedir = Path(__file__).resolve().parent
+        filename = basedir / 'data' / 'categories' /f'{category["partial_url"].replace("-", "_")}'
+        print(f'Exporting {category["partial_url"].replace("-", "_")}.json to {filename}...')
+        export_json(filename, category)
+
+    print("Done.")
+
+
+def generate_category_file():
+    space_lv1 = " " * 4
+    space_lv2 = space_lv1 * 2
+    space_lv3 = space_lv1 * 3
+    space_lv4 = space_lv1 * 4
+
+    def fmt_base_class(cls, name, url, space=space_lv1):
+        return 'class {}:\n{}__name = "{}"\n{}__url = "{}"\n\n'.format(
+            cls, space, name, space, url)
+
+    def fmt_subcategory(cls, name, url, pre=space_lv1, space=space_lv2):
+        return '{}class {}:\n{}__name = "{}"\n{}__url = "{}"\n\n'.format(
+            pre, cls, space, name, space, url
+        )
+    
+    base_dir = Path(__file__).parent
+    category_dir =  base_dir / 'data' / 'categories'
+    if not category_dir.is_dir():
+        raise Exception('Problem with categories directory path')
+    category_files = [f for f in category_dir.glob('*.json')]
+
+    for filename in category_files:
+        with open(filename, 'r', encoding="utf-8") as f:
+            category = json.loads(f.read())
+
+        result = fmt_base_class(category['class_name'], category['category_name'], category['partial_url'])
+
+        for subcategory in category['subcategories']:
+            result += fmt_subcategory(
+                subcategory['class_name'],
+                subcategory['name'],
+                subcategory['partial_url'],
+            )
+
+        export = base_dir / 'categories' / f'{category["partial_url"].replace("-", "_")}.py'
+
+        with open(export, 'w', encoding="utf-8") as f:
+            f.write(result)
+        
+        print(f'----- {category["partial_url"].replace("-", "_")}.py file generated -----')
+
+
+
+generate_category_file()
