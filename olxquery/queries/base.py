@@ -78,6 +78,8 @@ class BaseQuery:
             return path[0]
         elif len(path) > 1:
             return "/".join(path)
+        
+        return ""
 
     def __get_query(self):
         queries = {k: v for (k, v) in vars(self).items()  # Get queryable properties filtering from __QUERY_PARAMS
