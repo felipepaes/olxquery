@@ -1,5 +1,6 @@
 class DF:
     __name = "Estado de DF"
+    __url = ""
 
     class DDD_61:
         __name = "Distrito Federal e região"

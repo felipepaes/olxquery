@@ -1,5 +1,6 @@
 class PB:
     __name = "Estado de PB"
+    __url = ""
 
     class DDD_83:
         __name = "Paraíba"

@@ -1,5 +1,6 @@
 class CE:
     __name = "Estado de CE"
+    __url = ""
 
     class DDD_85:
         __name = "Fortaleza e região"

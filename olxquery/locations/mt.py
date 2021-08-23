@@ -1,5 +1,6 @@
 class MT:
     __name = "Estado de MT"
+    __url = ""
 
     class DDD_65:
         __name = "Cuiabá e região"

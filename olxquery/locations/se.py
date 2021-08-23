@@ -1,5 +1,6 @@
 class SE:
     __name = "Estado de SE"
+    __url = ""
 
     class DDD_79:
         __name = "Sergipe"

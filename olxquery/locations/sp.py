@@ -1,5 +1,7 @@
+
 class SP:
     __name = "Estado de São Paulo"
+    __url = ""
 
     class DDD_11:
         __name = "São Paulo e Região"

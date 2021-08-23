@@ -1,5 +1,6 @@
 class RJ:
     __name = "Estado de RJ"
+    __url = ""
 
     class DDD_21:
         __name = "Rio de Janeiro e região"

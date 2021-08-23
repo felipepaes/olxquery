@@ -1,5 +1,6 @@
 class AM:
     __name = "Estado de AM"
+    __url = ""
 
     class DDD_92:
         __name = "Região de Manaus"

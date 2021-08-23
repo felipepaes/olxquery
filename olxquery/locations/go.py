@@ -1,5 +1,6 @@
 class GO:
     __name = "Estado de GO"
+    __url = ""
 
     class DDD_62:
         __name = "Grande Goiânia e Anápolis"

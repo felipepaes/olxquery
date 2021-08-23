@@ -1,5 +1,6 @@
 class ES:
     __name = "Estado de ES"
+    __url = ""
 
     class DDD_27:
         __name = "Norte do Espírito Santo"

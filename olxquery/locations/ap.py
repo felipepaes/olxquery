@@ -1,5 +1,6 @@
 class AP:
     __name = "Estado de AP"
+    __url = ""
 
     class DDD_96:
         __name = "Amapá"

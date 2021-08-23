@@ -1,5 +1,6 @@
 class PA:
     __name = "Estado de PA"
+    __url = ""
 
     class DDD_91:
         __name = "Região de Belém"

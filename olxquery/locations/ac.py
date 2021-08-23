@@ -1,5 +1,6 @@
 class AC:
     __name = "Estado de AC"
+    __url = ""
 
     class DDD_68:
         __name = "Acre"

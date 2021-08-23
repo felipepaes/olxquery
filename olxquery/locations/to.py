@@ -1,5 +1,6 @@
 class TO:
     __name = "Estado de TO"
+    __url = ""
 
     class DDD_63:
         __name = "Tocantins"

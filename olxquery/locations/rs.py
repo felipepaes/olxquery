@@ -1,5 +1,6 @@
 class RS:
     __name = "Estado de RS"
+    __url = ""
 
     class DDD_51:
         __name = "Porto Alegre e região"

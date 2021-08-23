@@ -1,5 +1,6 @@
 class PE:
     __name = "Estado de PE"
+    __url = ""
 
     class DDD_81:
         __name = "Grande Recife"

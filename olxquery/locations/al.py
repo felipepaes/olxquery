@@ -1,5 +1,6 @@
 class AL:
     __name = "Estado de AL"
+    __url = ""
 
     class DDD_82:
         __name = "Alagoas"

@@ -1,5 +1,6 @@
 class PI:
     __name = "Estado de PI"
+    __url = ""
 
     class DDD_86:
         __name = "Teresina, Parnaíba e região"

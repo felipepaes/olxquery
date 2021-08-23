@@ -1,5 +1,6 @@
 class MG:
     __name = "Estado de MG"
+    __url = ""
 
     class DDD_31:
         __name = "Belo Horizonte e região"

@@ -1,5 +1,6 @@
 class MS:
     __name = "Estado de MS"
+    __url = ""
 
     class DDD_67:
         __name = "Mato Grosso do Sul"

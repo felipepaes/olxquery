@@ -1,5 +1,6 @@
 class BA:
     __name = "Estado de BA"
+    __url = ""
 
     class DDD_71:
         __name = "Salvador"

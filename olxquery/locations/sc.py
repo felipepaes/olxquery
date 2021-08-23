@@ -1,5 +1,6 @@
 class SC:
     __name = "Estado de SC"
+    __url = ""
 
     class DDD_47:
         __name = "Norte de Santa Catarina"

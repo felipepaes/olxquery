@@ -1,5 +1,6 @@
 class RR:
     __name = "Estado de RR"
+    __url = ""
 
     class DDD_95:
         __name = "Roraima"
