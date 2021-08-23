@@ -1,42 +1,39 @@
-from pathlib import Path
 import random
 import re
 import urllib.request
-from urllib.parse import urlunsplit, urlencode, urlparse, parse_qsl, urlunparse
 import xml.etree.ElementTree as ET
+from abc import ABC, abstractmethod
+from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse, urlunsplit
 
 
-class BaseQuery:
+class AbstractBaseQuery(ABC):
 
     __UA_FILE = "ua_file.txt"
     __SCHEME = "https"
     __NETLOC = "olx.com.br"
-    __QUERY_PARAMS = {
-        "search": "q",
-        "price_min": "ps",
-        "price_max": "pe",
-        "page": "o",
-    }
 
-    def __init__(self,
-                 search=None,
-                 location=None,
-                 category=None,
-                 price_min=None,
-                 price_max=None,
-                 *args,
-                 **kwargs):
+    @property
+    @classmethod
+    @abstractmethod
+    def QUERY_PARAMS(cls) -> dict[str, str]:
+        return NotImplementedError
 
-        self.search = search
-        self.location = location
-        self.category = category
-
-        self.price_min = price_min
-        self.price_max = price_max
+    def __init__(self, **kwargs):
+        
+        if kwargs:
+            self.__init_atributes(kwargs)
 
         self.__urls = []
         self.__urls_generated = False
         self.__user_agent = self.__get_user_agent()
+
+
+    def __init_atributes(self, kwargs: dict):
+        for k, v in kwargs.items():
+            if v is not None:
+                setattr(self, k, v)
+
 
     def __get_user_agent(self):
         try:
@@ -49,7 +46,8 @@ class BaseQuery:
         return user_agent
 
     def __get_state_uf(self):
-        if self.location is not None:
+        # if self.location is not None:
+        if hasattr(self, "location"):
             uf = self.location.__module__.split(".")[-1]
             return uf
         return None
@@ -68,10 +66,12 @@ class BaseQuery:
     def __get_path(self):
         path = []
 
-        if self.location is not None:
+        # if self.location is not None:
+        if hasattr(self, "location"):
             path.append(self.__get_obj_prop(self.location))
 
-        if self.category is not None:
+        # if self.category is not None:
+        if hasattr(self, "category"):
             path.append(self.__get_obj_prop(self.category))
 
         if len(path) == 1:
@@ -83,13 +83,13 @@ class BaseQuery:
 
     def __get_query(self):
         queries = {k: v for (k, v) in vars(self).items()  # Get queryable properties filtering from __QUERY_PARAMS
-                   if k in self.__QUERY_PARAMS.keys()
+                   if k in self.QUERY_PARAMS.keys()
                    and v is not None}
 
         if queries is not None:
             query = {}
             for k, v in queries.items():  # new dictionary with correct keys from __QUERY_PARAMS
-                query[self.__QUERY_PARAMS[k]] = v
+                query[self.QUERY_PARAMS[k]] = v
             return urlencode(query)
         # tuple_version = [(k, v) for k, v in {k: v for (k, v) in vars(self).items()  # Same but with list of tuples
         #                                      if k in self.__QUERY_PARAMS.keys()
@@ -115,11 +115,11 @@ class BaseQuery:
         html = response.read().decode("utf-8")
         return html
 
-    def __append_to_query(self, url, query_param, value):
+    def __append_page_to_query(self, url, page_number):
         parsed_url = urlparse(url)
         query = dict(parse_qsl(parsed_url.query))
         query.update({
-            self.__QUERY_PARAMS[query_param]: value
+            "o": page_number
         })
         parsed_url = parsed_url._replace(query=urlencode(query))
         url = urlunparse(parsed_url)
@@ -134,8 +134,8 @@ class BaseQuery:
 
         if matches:
             last_page = int(matches[-1])
-            for n in range(2, last_page+1):
-                self.__urls.append(self.__append_to_query(url, "page", n))
+            for n in range(2, last_page+1): # 2 because we already have the first page + 1 because of how range works
+                self.__urls.append(self.__append_page_to_query(url, n))
         else:
             self.__urls.append(url)
 
@@ -159,8 +159,9 @@ class BaseQuery:
     def __repr__(self):
         return f"<{self.__class__.__name__} object {id(self)!r}>"
 
-    def __str__(self):
-        search = f' search="{self.search}"' if self.search is not None else ""
-        location = f' location="{self.location.__name__}"' if self.location is not None else ""
-        category = f' category="{self.category.__name__}"' if self.category is not None else ""
-        return f"<BaseQuery({{{search}{location}{category}}})>"
+    # TODO: Think about how to implement __str__ without knowing the kwargs
+    # def __str__(self):
+    #     search = f' search="{self.search}"' if self.search is not None else ""
+    #     location = f' location="{self.location.__name__}"' if self.location is not None else ""
+    #     category = f' category="{self.category.__name__}"' if self.category is not None else ""
+    #     return f"<BaseQuery({{{search}{location}{category}}})>"
