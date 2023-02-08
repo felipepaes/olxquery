@@ -1,0 +1,22 @@
+[project]
+name = "olxquery"
+version = "0.1.0"
+description = "Build urls for querying the brazilian version of the famous listing website olx"
+authors = [
+    {name = "Felipe", email = "felipepaes@tutanota.com"},
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.2.1",
+]
+
+[build-system]
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
