@@ -1,8 +1,8 @@
-from . base import AbstractBaseQuery
+from . base import BaseQuery
 from olxquery.types import Location, Category
 
 
-class BasicQuery(AbstractBaseQuery):
+class BasicQuery(BaseQuery):
 
     QUERY_PARAMS = {
         "search": "q",
@@ -11,11 +11,11 @@ class BasicQuery(AbstractBaseQuery):
     }
 
     def __init__(self, 
-                search: str = None, 
-                location: Location = None, 
-                category: Category = None, 
-                price_min: int = None, 
-                price_max: int = None):
+                search: str | None = None, 
+                location: Location | None = None, 
+                category: Category | None = None, 
+                price_min: int | None = None, 
+                price_max: int | None = None):
         super().__init__(
                 search=search, 
                 location=location, 

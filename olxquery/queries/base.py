@@ -5,13 +5,16 @@ import xml.etree.ElementTree as ET
 from abc import ABC, abstractmethod
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse, urlunsplit
+from olxquery.types import Location, Category
 
 
-class AbstractBaseQuery(ABC):
-
+class BaseQuery(ABC):
     __UA_FILE = "ua_file.txt"
     __SCHEME = "https"
     __NETLOC = "olx.com.br"
+
+    location: Location | None
+    category: Category | None
 
     @property
     @classmethod
@@ -20,7 +23,6 @@ class AbstractBaseQuery(ABC):
         return NotImplementedError
 
     def __init__(self, **kwargs):
-        
         if kwargs:
             self.__init_atributes(kwargs)
 
@@ -28,12 +30,10 @@ class AbstractBaseQuery(ABC):
         self.__urls_generated = False
         self.__user_agent = self.__get_user_agent()
 
-
     def __init_atributes(self, kwargs: dict):
         for k, v in kwargs.items():
             if v is not None:
                 setattr(self, k, v)
-
 
     def __get_user_agent(self):
         try:
@@ -53,10 +53,6 @@ class AbstractBaseQuery(ABC):
         return None
 
     def __get_netloc(self):
-        if self.__get_state_uf():
-            uf = self.__get_state_uf()
-            netloc = f"{uf}.{self.__NETLOC}"
-            return netloc
         return self.__NETLOC
 
     def __get_obj_prop(self, cls, prop="url"):
@@ -66,29 +62,40 @@ class AbstractBaseQuery(ABC):
     def __get_path(self):
         path = []
 
-        # if self.location is not None:
-        if hasattr(self, "location"):
-            path.append(self.__get_obj_prop(self.location))
-
         # if self.category is not None:
         if hasattr(self, "category"):
             path.append(self.__get_obj_prop(self.category))
+
+        # if self.location is not None:
+        if hasattr(self, "location"):
+            uf = self.__get_state_uf()
+            path.append(f"estado-{uf}")
+            path.append(self.__get_obj_prop(self.location))
 
         if len(path) == 1:
             return path[0]
         elif len(path) > 1:
             return "/".join(path)
-        
+
         return ""
 
     def __get_query(self):
-        queries = {k: v for (k, v) in vars(self).items()  # Get queryable properties filtering from __QUERY_PARAMS
-                   if k in self.QUERY_PARAMS.keys()
-                   and v is not None}
+        queries = {
+            k: v
+            for (k, v) in vars(
+                self
+            ).items()  # Get queryable properties filtering from __QUERY_PARAMS
+            if k in self.QUERY_PARAMS.keys() and v is not None
+        }
 
         if queries is not None:
             query = {}
-            for k, v in queries.items():  # new dictionary with correct keys from __QUERY_PARAMS
+            for (
+                k,
+                v,
+            ) in (
+                queries.items()
+            ):  # new dictionary with correct keys from __QUERY_PARAMS
                 query[self.QUERY_PARAMS[k]] = v
             return urlencode(query)
         # tuple_version = [(k, v) for k, v in {k: v for (k, v) in vars(self).items()  # Same but with list of tuples
@@ -107,9 +114,7 @@ class AbstractBaseQuery(ABC):
 
     def __get_html(self, url):
         req = urllib.request.Request(
-            url,
-            None,
-            headers={"User-Agent": self.__user_agent}
+            url, None, headers={"User-Agent": self.__user_agent}
         )
         response = urllib.request.urlopen(req)
         html = response.read().decode("utf-8")
@@ -118,9 +123,7 @@ class AbstractBaseQuery(ABC):
     def __append_page_to_query(self, url, page_number):
         parsed_url = urlparse(url)
         query = dict(parse_qsl(parsed_url.query))
-        query.update({
-            "o": page_number
-        })
+        query.update({"o": page_number})
         parsed_url = parsed_url._replace(query=urlencode(query))
         url = urlunparse(parsed_url)
         return url
@@ -134,7 +137,9 @@ class AbstractBaseQuery(ABC):
 
         if matches:
             last_page = int(matches[-1])
-            for n in range(2, last_page+1): # 2 because we already have the first page + 1 because of how range works
+            for n in range(
+                2, last_page + 1
+            ):  # 2 because we already have the first page + 1 because of how range works
                 self.__urls.append(self.__append_page_to_query(url, n))
         else:
             self.__urls.append(url)
