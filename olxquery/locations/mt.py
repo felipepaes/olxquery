@@ -24,4 +24,3 @@ class MT:
             __name = "Todas as cidades"
             __url = "regiao-de-rondonopolis-e-sinop/todas-as-cidades"
             __zone_id = 7526
-

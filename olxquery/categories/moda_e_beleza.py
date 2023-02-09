@@ -17,4 +17,3 @@ class ModaEBeleza:
     class BolsasMalasEMochilas:
         __name = "Bolsas, malas e mochilas"
         __url = "bolsas-malas-e-mochilas"
-

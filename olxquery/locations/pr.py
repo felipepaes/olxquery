@@ -150,4 +150,3 @@ class PR:
             __name = "Sudoeste Paranaense"
             __url = "regiao-de-francisco-beltrao-e-pato-branco/sudoeste-paranaense"
             __zone_id = 191
-

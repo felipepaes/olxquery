@@ -39,4 +39,3 @@ class AM:
             __name = "Região do Sul Amazonense"
             __url = "leste-do-amazonas/regiao-do-sul-amazonense"
             __zone_id = 5077
-

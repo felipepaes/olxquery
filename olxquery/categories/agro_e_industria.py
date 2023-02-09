@@ -29,4 +29,3 @@ class AgroEIndustria:
     class PecasParaTratoresEMaquinas:
         __name = "Peças para tratores e máquinas"
         __url = "agro-e-industria/pecas-para-tratores-e-maquinas"
-

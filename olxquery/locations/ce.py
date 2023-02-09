@@ -24,4 +24,3 @@ class CE:
     class DDD_88:
         __name = "Juazeiro do Norte, Sobral e região"
         __url = "regiao-de-juazeiro-do-norte-e-sobral"
-

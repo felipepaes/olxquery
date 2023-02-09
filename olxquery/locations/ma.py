@@ -24,4 +24,3 @@ class MA:
             __name = "Todas as cidades"
             __url = "regiao-de-imperatriz-e-caxias/todas-as-cidades"
             __zone_id = 10823
-

@@ -15,4 +15,3 @@ class SE:
             __name = "Outras Cidades"
             __url = "sergipe/outras-cidades"
             __zone_id = 7398
-

@@ -33,4 +33,3 @@ class PA:
             __name = "Todas as cidades"
             __url = "regiao-de-maraba/todas-as-cidades"
             __zone_id = 11200
-

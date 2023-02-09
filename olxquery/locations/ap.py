@@ -15,4 +15,3 @@ class AP:
             __name = "Outras Cidades"
             __url = "amapa/outras-cidades"
             __zone_id = 6739
-

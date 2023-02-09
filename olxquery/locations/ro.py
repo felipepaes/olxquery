@@ -15,4 +15,3 @@ class RO:
             __name = "Outras Cidades"
             __url = "rondonia/outras-cidades"
             __zone_id = 7046
-

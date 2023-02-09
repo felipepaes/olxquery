@@ -17,4 +17,3 @@ class EletronicosECelulares:
     class Videogames:
         __name = "Videogames"
         __url = "videogames"
-

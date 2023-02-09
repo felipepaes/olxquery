@@ -30,4 +30,3 @@ class MS:
             __name = "Três Lagoas"
             __url = "mato-grosso-do-sul/tres-lagoas"
             __zone_id = 4026
-

@@ -25,4 +25,3 @@ class AnimaisDeEstimacao:
     class AquariosEAcessorios:
         __name = "Aquários e acessórios"
         __url = "animais-de-estimacao/aquarios-e-acessorios"
-

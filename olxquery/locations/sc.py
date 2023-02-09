@@ -78,4 +78,3 @@ class SC:
             __name = "Regiões de Curitibanos e C. dos Lages"
             __url = "oeste-de-santa-catarina/regioes-de-curitibanos-e-c-dos-lages"
             __zone_id = 2272
-

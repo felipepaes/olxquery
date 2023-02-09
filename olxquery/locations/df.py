@@ -15,4 +15,3 @@ class DF:
             __name = "Outras cidades"
             __url = "distrito-federal-e-regiao/outras-cidades"
             __zone_id = 3602
-

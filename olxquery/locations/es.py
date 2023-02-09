@@ -64,4 +64,3 @@ class ES:
             __name = "Guarapari e região"
             __url = "sul-do-espirito-santo/guarapari-e-regiao"
             __zone_id = 2035
-

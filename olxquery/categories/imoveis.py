@@ -25,4 +25,3 @@ class Imoveis:
     class Lancamentos:
         __name = "Lançamentos"
         __url = "imoveis/lancamentos"
-

@@ -56,4 +56,3 @@ class BA:
             __name = "Todas as cidades"
             __url = "regiao-de-vitoria-da-conquista-e-barreiras/todas-as-cidades"
             __zone_id = 11344
-

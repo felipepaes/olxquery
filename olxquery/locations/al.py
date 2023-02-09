@@ -15,4 +15,3 @@ class AL:
             __name = "Outras Cidades"
             __url = "alagoas/outras-cidades"
             __zone_id = 6490
-

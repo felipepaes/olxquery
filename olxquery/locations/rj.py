@@ -98,4 +98,3 @@ class RJ:
             __name = "Vale do Paraíba"
             __url = "serra-angra-dos-reis-e-regiao/vale-do-paraiba"
             __zone_id = 2242
-

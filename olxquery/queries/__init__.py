@@ -1,1 +1,1 @@
-from . basic import BasicQuery
+from .basic import BasicQuery

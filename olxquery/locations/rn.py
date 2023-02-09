@@ -15,4 +15,3 @@ class RN:
             __name = "Outras Cidades"
             __url = "rio-grande-do-norte/outras-cidades"
             __zone_id = 6821
-

@@ -21,4 +21,3 @@ class ParaASuaCasa:
     class ObjetosDeDecoracao:
         __name = "Objetos de decoração"
         __url = "objetos-de-decoracao"
-

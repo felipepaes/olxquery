@@ -13,4 +13,3 @@ class ComercioEEscritorio:
     class TrailersECarrinhosComerciais:
         __name = "Trailers e carrinhos comerciais"
         __url = "comercio-e-escritorio/trailers-e-carrinhos-comerciais"
-

@@ -21,4 +21,3 @@ class MusicaEHobbies:
     class Antiguidades:
         __name = "Antiguidades"
         __url = "antiguidades"
-

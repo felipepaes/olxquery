@@ -15,4 +15,3 @@ class RR:
             __name = "Outras cidades"
             __url = "roraima/outras-cidades"
             __zone_id = 5121
-

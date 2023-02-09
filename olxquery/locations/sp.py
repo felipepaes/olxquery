@@ -1,4 +1,3 @@
-
 class SP:
     __name = "Estado de São Paulo"
     __url = ""

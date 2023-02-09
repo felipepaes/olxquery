@@ -28,7 +28,9 @@ class RS:
 
         class MoinhosDeVento:
             __name = "Moinhos de Vento"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/moinhos-de-vento"
+            __url = (
+                "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/moinhos-de-vento"
+            )
             __zone_id = 4370
 
         class Norte:
@@ -53,7 +55,9 @@ class RS:
 
         class GrandePortoAlegre:
             __name = "Grande Porto Alegre"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/grande-porto-alegre"
+            __url = (
+                "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/grande-porto-alegre"
+            )
             __zone_id = 4159
 
         class OutrasCidades:
@@ -140,6 +144,7 @@ class RS:
 
         class RegiaoDeSantaMaria:
             __name = "Região de Santa Maria"
-            __url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta/regiao-de-santa-maria"
+            __url = (
+                "regioes-de-santa-maria-uruguaiana-e-cruz-alta/regiao-de-santa-maria"
+            )
             __zone_id = 4405
-

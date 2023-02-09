@@ -15,4 +15,3 @@ class AC:
             __name = "Outras Cidades"
             __url = "acre/outras-cidades"
             __zone_id = 6406
-

@@ -116,12 +116,16 @@ class MG:
 
         class RegiaoDeTeofiloOtoni:
             __name = "Região de Teófilo Otoni"
-            __url = "regiao-de-governador-valadares-e-teofilo-otoni/regiao-de-teofilo-otoni"
+            __url = (
+                "regiao-de-governador-valadares-e-teofilo-otoni/regiao-de-teofilo-otoni"
+            )
             __zone_id = 949
 
         class ValeDoJequitinhonha:
             __name = "Vale do Jequitinhonha"
-            __url = "regiao-de-governador-valadares-e-teofilo-otoni/vale-do-jequitinhonha"
+            __url = (
+                "regiao-de-governador-valadares-e-teofilo-otoni/vale-do-jequitinhonha"
+            )
             __zone_id = 907
 
     class DDD_34:
@@ -144,7 +148,9 @@ class MG:
 
         class PocosDeCaldasEPousoAlegre:
             __name = "Poços de Caldas e Pouso Alegre"
-            __url = "regiao-de-pocos-de-caldas-e-varginha/pocos-de-caldas-e-pouso-alegre"
+            __url = (
+                "regiao-de-pocos-de-caldas-e-varginha/pocos-de-caldas-e-pouso-alegre"
+            )
             __zone_id = 811
 
         class RegiaoDeItajuba:
@@ -214,4 +220,3 @@ class MG:
             __name = "Vale do Jequitinhonha"
             __url = "regiao-de-montes-claros-e-diamantina/vale-do-jequitinhonha"
             __zone_id = 656
-

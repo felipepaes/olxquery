@@ -15,4 +15,3 @@ class TO:
             __name = "Outras Cidades"
             __url = "tocantins/outras-cidades"
             __zone_id = 7195
-

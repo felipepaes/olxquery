@@ -24,4 +24,3 @@ class PI:
             __name = "Todas as cidades"
             __url = "regiao-de-picos-e-floriano/todas-as-cidades"
             __zone_id = 10091
-

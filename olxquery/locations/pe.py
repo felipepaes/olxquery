@@ -27,7 +27,9 @@ class PE:
 
         class RegiaoDeSaoFranciscoPernambucano:
             __name = "Região de São Francisco Pernambucano"
-            __url = "regiao-de-petrolina-e-garanhuns/regiao-de-sao-francisco-pernambucano"
+            __url = (
+                "regiao-de-petrolina-e-garanhuns/regiao-de-sao-francisco-pernambucano"
+            )
             __zone_id = 5207
 
         class RegiaoDoAgrestePernambucano:
@@ -39,4 +41,3 @@ class PE:
             __name = "Região do Sertão Pernambucano"
             __url = "regiao-de-petrolina-e-garanhuns/regiao-do-sertao-pernambucano"
             __zone_id = 5208
-

@@ -30,4 +30,3 @@ class PB:
             __name = "Santa Rita, Bayeux e região"
             __url = "paraiba/santa-rita-bayeux-e-regiao"
             __zone_id = 4798
-

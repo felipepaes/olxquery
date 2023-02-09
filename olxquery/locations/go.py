@@ -84,4 +84,3 @@ class GO:
             __name = "Todas as cidades"
             __url = "regiao-de-rio-verde-e-caldas-novas/todas-as-cidades"
             __zone_id = 7527
-

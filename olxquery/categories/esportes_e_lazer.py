@@ -9,4 +9,3 @@ class EsportesELazer:
     class EsportesEGinastica:
         __name = "Esportes e ginástica"
         __url = "esportes-e-ginastica"
-
