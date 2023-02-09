@@ -8,14 +8,14 @@ Work in Progress...
 ```python
 from pprint import pprint
 
-from olxquery.queries.base import BaseQuery
+from olxquery.queries import BasicQuery
 from olxquery.locations import SP
-from olxquery.categories import Eletronicos
+from olxquery.categories import EletronicosECelulares
 
-query = BaseQuery(
+query = BasicQuery(
     search="Playstation 4",
     location=SP.DDD_11.ZonaLeste,
-    category=Eletronicos.VideoGames,
+    category=EletronicosECelulares.Videogames,
     price_min=700,
     price_max=1200
 )

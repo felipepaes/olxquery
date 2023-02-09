@@ -6,7 +6,7 @@ authors = [
     {name = "Felipe", email = "felipepaes@tutanota.com"},
 ]
 dependencies = []
-requires-python = ">=3.11"
+requires-python = ">=3.6"
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -15,6 +15,9 @@ license = {text = "MIT"}
 [tool.pdm.dev-dependencies]
 test = [
     "pytest>=7.2.1",
+]
+format = [
+    "black>=23.1.0",
 ]
 
 [build-system]
