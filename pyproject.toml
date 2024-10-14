@@ -6,7 +6,7 @@ authors = [
     {name = "Felipe", email = "felipepaes@tutanota.com"},
 ]
 dependencies = []
-requires-python = ">=3.6"
+requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 

@@ -3,7 +3,7 @@ demo.py
 
 # PDM
 .pdm.toml
-pdm.lock
+.pdm-python
 
 # Created by https://www.toptal.com/developers/gitignore/api/django,python,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,python,vscode
