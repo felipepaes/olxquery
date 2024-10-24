@@ -1,17 +1,22 @@
-class DF:
-    __name = "Estado de DF"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_61:
-        __name = "Distrito Federal e região"
-        __url = "distrito-federal-e-região"
 
-        class Brasilia:
-            __name = "Brasília"
-            __url = "distrito-federal-e-regiao/brasilia"
-            __zone_id = 3613
+class DF(Location):
+    name = "Estado de DF"
+    url = "estado-df"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "distrito-federal-e-regiao/outras-cidades"
-            __zone_id = 3602
+    class DDD_61(Location):
+        name = "Distrito Federal e região"
+        url = "distrito-federal-e-região"
+
+        class Brasilia(Location):
+            name = "Brasília"
+            url = "brasilia"
+
+            class LargoNorte(Location):
+                name = "RA XVIII Lago Norte"
+                url = "ra-xviii---lago-norte"
+
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"

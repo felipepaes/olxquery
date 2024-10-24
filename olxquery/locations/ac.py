@@ -1,17 +1,18 @@
-class AC:
-    __name = "Estado de AC"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_68:
-        __name = "Acre"
-        __url = "acre"
 
-        class RioBranco:
-            __name = "Rio Branco"
-            __url = "acre/rio-branco"
-            __zone_id = 6408
+class AC(Location):
+    name = "Estado de AC"
+    url = "estado-ac"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "acre/outras-cidades"
-            __zone_id = 6406
+    class DDD_68(Location):
+        name = "Acre"
+        url = "acre"
+
+        class RioBranco(Location):
+            name = "Rio Branco"
+            url = "rio-branco"
+
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"

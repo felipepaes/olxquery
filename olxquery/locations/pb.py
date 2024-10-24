@@ -1,32 +1,30 @@
-class PB:
-    __name = "Estado de PB"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_83:
-        __name = "Paraíba"
-        __url = "paraíba"
 
-        class JoaoPessoa:
-            __name = "João Pessoa"
-            __url = "paraiba/joao-pessoa"
-            __zone_id = 4794
+class PB(Location):
+    name = "Estado de PB"
+    url = "estado-pb"
 
-        class CampinaGrandeGuarabiraERegiao:
-            __name = "Campina Grande, Guarabira e região"
-            __url = "paraiba/campina-grande-guarabira-e-regiao"
-            __zone_id = 4797
+    class DDD_83(Location):
+        name = "Paraíba"
+        url = "paraíba"
 
-        class MonteiroPicuiERegiao:
-            __name = "Monteiro, Picuí e região"
-            __url = "paraiba/monteiro-picui-e-regiao"
-            __zone_id = 4796
+        class JoaoPessoa(Location):
+            name = "João Pessoa"
+            url = "joao-pessoa"
 
-        class PatosSousaERegiao:
-            __name = "Patos, Sousa e região"
-            __url = "paraiba/patos-sousa-e-regiao"
-            __zone_id = 4795
+        class CampinaGrandeGuarabiraERegiao(Location):
+            name = "Campina Grande, Guarabira e região"
+            url = "campina-grande-guarabira-e-regiao"
 
-        class SantaRitaBayeuxERegiao:
-            __name = "Santa Rita, Bayeux e região"
-            __url = "paraiba/santa-rita-bayeux-e-regiao"
-            __zone_id = 4798
+        class MonteiroPicuiERegiao(Location):
+            name = "Monteiro, Picuí e região"
+            url = "monteiro-picui-e-regiao"
+
+        class PatosSousaERegiao(Location):
+            name = "Patos, Sousa e região"
+            url = "patos-sousa-e-regiao"
+
+        class SantaRitaBayeuxERegiao(Location):
+            name = "Santa Rita, Bayeux e região"
+            url = "santa-rita-bayeux-e-regiao"

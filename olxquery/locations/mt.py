@@ -1,26 +1,26 @@
-class MT:
-    __name = "Estado de MT"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_65:
-        __name = "Cuiabá e região"
-        __url = "regiao-de-cuiaba"
 
-        class Cuiaba:
-            __name = "Cuiabá"
-            __url = "regiao-de-cuiaba/cuiaba"
-            __zone_id = 7535
+class MT(Location):
+    name = "Estado de MT"
+    url = "estado-mt"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "regiao-de-cuiaba/outras-cidades"
-            __zone_id = 7530
+    class DDD_65(Location):
+        name = "Cuiabá e região"
+        url = "regiao-de-cuiaba"
 
-    class DDD_66:
-        __name = "Rondonópolis, Sinop e região"
-        __url = "regiao-de-rondonopolis-e-sinop"
+        class Cuiaba(Location):
+            name = "Cuiabá"
+            url = "cuiaba"
 
-        class TodasAsCidades:
-            __name = "Todas as cidades"
-            __url = "regiao-de-rondonopolis-e-sinop/todas-as-cidades"
-            __zone_id = 7526
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"
+
+    class DDD_66(Location):
+        name = "Rondonópolis, Sinop e região"
+        url = "regiao-de-rondonopolis-e-sinop"
+
+        class TodasAsCidades(Location):
+            name = "Todas as cidades"
+            url = "todas-as-cidades"

@@ -1,32 +1,30 @@
-class MS:
-    __name = "Estado de MS"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_67:
-        __name = "Mato Grosso do Sul"
-        __url = "mato-grosso-do-sul"
 
-        class CampoGrande:
-            __name = "Campo Grande"
-            __url = "mato-grosso-do-sul/campo-grande"
-            __zone_id = 3807
+class MS(Location):
+    name = "Estado de MS"
+    url = "estado-ms"
 
-        class Corumba:
-            __name = "Corumbá"
-            __url = "mato-grosso-do-sul/corumba"
-            __zone_id = 3779
+    class DDD_67(Location):
+        name = "Mato Grosso do Sul"
+        url = "mato-grosso-do-sul"
 
-        class Dourados:
-            __name = "Dourados"
-            __url = "mato-grosso-do-sul/dourados"
-            __zone_id = 3942
+        class CampoGrande(Location):
+            name = "Campo Grande"
+            url = "campo-grande"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "mato-grosso-do-sul/outras-cidades"
-            __zone_id = 3867
+        class Corumba(Location):
+            name = "Corumbá"
+            url = "corumba"
 
-        class TresLagoas:
+        class Dourados(Location):
+            name = "Dourados"
+            url = "dourados"
+
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
+
+        class TresLagoas(Location):
             __name = "Três Lagoas"
-            __url = "mato-grosso-do-sul/tres-lagoas"
-            __zone_id = 4026
+            url = "tres-lagoas"

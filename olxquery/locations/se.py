@@ -1,17 +1,18 @@
-class SE:
-    __name = "Estado de SE"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_79:
-        __name = "Sergipe"
-        __url = "sergipe"
 
-        class Aracaju:
-            __name = "Aracaju"
-            __url = "sergipe/aracaju"
-            __zone_id = 7400
+class SE(Location):
+    name = "Estado de SE"
+    url = "estado-se"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "sergipe/outras-cidades"
-            __zone_id = 7398
+    class DDD_79(Location):
+        name = "Sergipe"
+        url = "sergipe"
+
+        class Aracaju(Location):
+            name = "Aracaju"
+            url = "aracaju"
+
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"

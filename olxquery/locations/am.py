@@ -1,41 +1,38 @@
-class AM:
-    __name = "Estado de AM"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_92:
-        __name = "Região de Manaus"
-        __url = "regiao-de-manaus"
 
-        class Manaus:
-            __name = "Manaus"
-            __url = "regiao-de-manaus/manaus"
-            __zone_id = 4706
+class AM(Location):
+    name = "Estado de AM"
+    url = "estado-am"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "regiao-de-manaus/outras-cidades"
-            __zone_id = 4765
+    class DDD_92(Location):
+        name = "Região de Manaus"
+        url = "regiao-de-manaus"
 
-    class DDD_97:
-        __name = "Leste do Amazonas"
-        __url = "leste-do-amazonas"
+        class Manaus(Location):
+            name = "Manaus"
+            url = "manaus"
 
-        class RegiaoDoCentroAmazonense:
-            __name = "Região do Centro Amazonense"
-            __url = "leste-do-amazonas/regiao-do-centro-amazonense"
-            __zone_id = 5080
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
 
-        class RegiaoDoNorteAmazonense:
-            __name = "Região do Norte Amazonense"
-            __url = "leste-do-amazonas/regiao-do-norte-amazonense"
-            __zone_id = 5079
+    class DDD_97(Location):
+        name = "Leste do Amazonas"
+        url = "leste-do-amazonas"
 
-        class RegiaoDoSudoesteAmazonense:
-            __name = "Região do Sudoeste Amazonense"
-            __url = "leste-do-amazonas/regiao-do-sudoeste-amazonense"
-            __zone_id = 5078
+        class RegiaoDoCentroAmazonense(Location):
+            name = "Região do Centro Amazonense"
+            url = "regiao-do-centro-amazonense"
 
-        class RegiaoDoSulAmazonense:
-            __name = "Região do Sul Amazonense"
-            __url = "leste-do-amazonas/regiao-do-sul-amazonense"
-            __zone_id = 5077
+        class RegiaoDoNorteAmazonense(Location):
+            name = "Região do Norte Amazonense"
+            url = "regiao-do-norte-amazonense"
+
+        class RegiaoDoSudoesteAmazonense(Location):
+            name = "Região do Sudoeste Amazonense"
+            url = "regiao-do-sudoeste-amazonense"
+
+        class RegiaoDoSulAmazonense(Location):
+            name = "Região do Sul Amazonense"
+            url = "regiao-do-sul-amazonense"

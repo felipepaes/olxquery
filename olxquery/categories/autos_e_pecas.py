@@ -1,3 +1,6 @@
-class AutosEPecas:
-    __name = "Autos e peças"
-    __url = "autos-e-pecas"
+from olxquery.types import Category
+
+
+class AutosEPecas(Category):
+    name = "Autos e peças"
+    url = "autos-e-pecas"

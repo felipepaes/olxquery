@@ -1,17 +1,18 @@
-class AL:
-    __name = "Estado de AL"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_82:
-        __name = "Alagoas"
-        __url = "alagoas"
 
-        class Maceio:
-            __name = "Maceió"
-            __url = "alagoas/maceio"
-            __zone_id = 6492
+class AL(Location):
+    name = "Estado de AL"
+    url = "estado-al"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "alagoas/outras-cidades"
-            __zone_id = 6490
+    class DDD_82(Location):
+        name = "Alagoas"
+        url = "alagoas"
+
+        class Maceio(Location):
+            name = "Maceió"
+            url = "maceio"
+
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"

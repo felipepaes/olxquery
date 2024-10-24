@@ -1,17 +1,18 @@
-class AP:
-    __name = "Estado de AP"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_96:
-        __name = "Amapá"
-        __url = "amapá"
 
-        class Macapa:
-            __name = "Macapá"
-            __url = "amapa/macapa"
-            __zone_id = 6741
+class AP(Location):
+    name = "Estado de AP"
+    url = "estado-ap"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "amapa/outras-cidades"
-            __zone_id = 6739
+    class DDD_96(Location):
+        name = "Amapá"
+        url = "amapá"
+
+        class Macapa(Location):
+            name = "Macapá"
+            url = "macapa"
+
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"

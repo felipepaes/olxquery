@@ -1,26 +1,26 @@
-class MA:
-    __name = "Estado de MA"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_98:
-        __name = "Região de São Luís"
-        __url = "regiao-de-sao-luis"
 
-        class SaoLuis:
-            __name = "São Luís"
-            __url = "regiao-de-sao-luis/sao-luis"
-            __zone_id = 11551
+class MA(Location):
+    name = "Estado de MA"
+    url = "estado-ma"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "regiao-de-sao-luis/outras-cidades"
-            __zone_id = 11549
+    class DDD_98(Location):
+        name = "Região de São Luís"
+        url = "regiao-de-sao-luis"
 
-    class DDD_99:
-        __name = "Imperatriz, Caxias e região"
-        __url = "regiao-de-imperatriz-e-caxias"
+        class SaoLuis(Location):
+            name = "São Luís"
+            url = "sao-luis"
 
-        class TodasAsCidades:
-            __name = "Todas as cidades"
-            __url = "regiao-de-imperatriz-e-caxias/todas-as-cidades"
-            __zone_id = 10823
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"
+
+    class DDD_99(Location):
+        name = "Imperatriz, Caxias e região"
+        url = "regiao-de-imperatriz-e-caxias"
+
+        class TodasAsCidades(Location):
+            name = "Todas as cidades"
+            url = "todas-as-cidades"

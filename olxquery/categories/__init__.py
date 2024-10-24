@@ -1,13 +1,11 @@
-from .agro_e_industria import AgroEIndustria
-from .animais_de_estimacao import AnimaisDeEstimacao
-from .artigos_infantis import ArtigosInfantis
 from .autos_e_pecas import AutosEPecas
-from .comercio_e_escritorio import ComercioEEscritorio
+from .eletrodomesticos import Eletro
 from .eletronicos_e_celulares import EletronicosECelulares
-from .esportes_e_lazer import EsportesELazer
 from .imoveis import Imoveis
-from .moda_e_beleza import ModaEBeleza
-from .musica_e_hobbies import MusicaEHobbies
-from .para_a_sua_casa import ParaASuaCasa
-from .servicos import Servicos
-from .vagas_de_emprego import VagasDeEmprego
+
+__all__ = [
+    "AutosEPecas",
+    "Eletro",
+    "EletronicosECelulares",
+    "Imoveis",
+]

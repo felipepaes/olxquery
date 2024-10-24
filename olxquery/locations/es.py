@@ -1,66 +1,58 @@
-class ES:
-    __name = "Estado de ES"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_27:
-        __name = "Norte do Espírito Santo"
-        __url = "norte-do-espirito-santo"
 
-        class Vitoria:
-            __name = "Vitória"
-            __url = "norte-do-espirito-santo/vitoria"
-            __zone_id = 1805
+class ES(Location):
+    name = "Estado de ES"
+    url = "estado-es"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "norte-do-espirito-santo/outras-cidades"
-            __zone_id = 1932
+    class DDD_27(Location):
+        name = "Norte do Espírito Santo"
+        url = "norte-do-espirito-santo"
 
-        class VilaVelha:
-            __name = "Vila Velha"
-            __url = "norte-do-espirito-santo/vila-velha"
-            __zone_id = 1937
+        class Vitoria(Location):
+            name = "Vitória"
+            url = "vitoria"
 
-        class AfonsoClaudioERegiao:
-            __name = "Afonso Cláudio e região"
-            __url = "norte-do-espirito-santo/afonso-claudio-e-regiao"
-            __zone_id = 1795
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
 
-        class GuarapariERegiao:
-            __name = "Guarapari e região"
-            __url = "norte-do-espirito-santo/guarapari-e-regiao"
-            __zone_id = 1801
+        class VilaVelha(Location):
+            name = "Vila Velha"
+            url = "vila-velha"
 
-        class RegiaoDeColatinaENovaVenecia:
-            __name = "Região de Colatina e Nova Venécia"
-            __url = "norte-do-espirito-santo/regiao-de-colatina-e-nova-venecia"
-            __zone_id = 1889
+        class AfonsoClaudioERegiao(Location):
+            name = "Afonso Cláudio e região"
+            url = "afonso-claudio-e-regiao"
 
-        class RegiaoDeLinharesESaoMateus:
-            __name = "Região de Linhares e São Mateus"
-            __url = "norte-do-espirito-santo/regiao-de-linhares-e-sao-mateus"
-            __zone_id = 1908
+        class GuarapariERegiao(Location):
+            name = "Guarapari e região"
+            url = "guarapari-e-regiao"
 
-        class SantaTeresaERegiao:
-            __name = "Santa Teresa e região"
-            __url = "norte-do-espirito-santo/santa-teresa-e-regiao"
-            __zone_id = 1925
+        class RegiaoDeColatinaENovaVenecia(Location):
+            name = "Região de Colatina e Nova Venécia"
+            url = "regiao-de-colatina-e-nova-venecia"
 
-    class DDD_28:
-        __name = "Sul do Espírito Santo"
-        __url = "sul-do-espirito-santo"
+        class RegiaoDeLinharesESaoMateus(Location):
+            name = "Região de Linhares e São Mateus"
+            url = "regiao-de-linhares-e-sao-mateus"
 
-        class AfonsoClaudioERegiao:
-            __name = "Afonso Cláudio e região"
-            __url = "sul-do-espirito-santo/afonso-claudio-e-regiao"
-            __zone_id = 2032
+        class SantaTeresaERegiao(Location):
+            name = "Santa Teresa e região"
+            url = "santa-teresa-e-regiao"
 
-        class CachoeiroDeItapemirimERegiaoSul:
-            __name = "Cachoeiro de Itapemirim e Região sul"
-            __url = "sul-do-espirito-santo/cachoeiro-de-itapemirim-e-regiao-sul"
-            __zone_id = 2041
+    class DDD_28(Location):
+        name = "Sul do Espírito Santo"
+        url = "sul-do-espirito-santo"
 
-        class GuarapariERegiao:
-            __name = "Guarapari e região"
-            __url = "sul-do-espirito-santo/guarapari-e-regiao"
-            __zone_id = 2035
+        class AfonsoClaudioERegiao(Location):
+            name = "Afonso Cláudio e região"
+            url = "afonso-claudio-e-regiao"
+
+        class CachoeiroDeItapemirimERegiaoSul(Location):
+            name = "Cachoeiro de Itapemirim e Região sul"
+            url = "cachoeiro-de-itapemirim-e-regiao-sul"
+
+        class GuarapariERegiao(Location):
+            name = "Guarapari e região"
+            url = "guarapari-e-regiao"
