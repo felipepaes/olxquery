@@ -1,86 +1,74 @@
-class GO:
-    __name = "Estado de GO"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_62:
-        __name = "Grande Goiânia e Anápolis"
-        __url = "grande-goiania-e-anapolis"
 
-        class RegiaoCampinas:
-            __name = "Região Campinas"
-            __url = "grande-goiania-e-anapolis/regiao-campinas"
-            __zone_id = 5301
+class GO(Location):
+    name = "Estado de GO"
+    url = "estado-go"
 
-        class RegiaoCentral:
-            __name = "Região Central"
-            __url = "grande-goiania-e-anapolis/regiao-central"
-            __zone_id = 5302
+    class DDD_62(Location):
+        name = "Grande Goiânia e Anápolis"
+        url = "grande-goiania-e-anapolis"
 
-        class RegiaoLeste:
-            __name = "Região Leste"
-            __url = "grande-goiania-e-anapolis/regiao-leste"
-            __zone_id = 5303
+        class RegiaoCampinas(Location):
+            name = "Região Campinas"
+            url = "regiao-campinas"
 
-        class RegiaoMacambiraECascavel:
-            __name = "Região Macambira e Cascavél"
-            __url = "grande-goiania-e-anapolis/regiao-macambira-e-cascavel"
-            __zone_id = 5304
+        class RegiaoCentral(Location):
+            name = "Região Central"
+            url = "regiao-central"
 
-        class RegiaoMendanha:
-            __name = "Região Mendanha"
-            __url = "grande-goiania-e-anapolis/regiao-mendanha"
-            __zone_id = 5305
+        class RegiaoLeste(Location):
+            name = "Região Leste"
+            url = "regiao-leste"
 
-        class RegiaoNoroeste:
-            __name = "Região Noroeste"
-            __url = "grande-goiania-e-anapolis/regiao-noroeste"
-            __zone_id = 5306
+        class RegiaoMacambiraECascavel(Location):
+            name = "Região Macambira e Cascavél"
+            url = "regiao-macambira-e-cascavel"
 
-        class RegiaoNorte:
-            __name = "Região Norte"
-            __url = "grande-goiania-e-anapolis/regiao-norte"
-            __zone_id = 5307
+        class RegiaoMendanha(Location):
+            name = "Região Mendanha"
+            url = "regiao-mendanha"
 
-        class RegiaoOeste:
-            __name = "Região Oeste"
-            __url = "grande-goiania-e-anapolis/regiao-oeste"
-            __zone_id = 5308
+        class RegiaoNoroeste(Location):
+            name = "Região Noroeste"
+            url = "regiao-noroeste"
 
-        class RegiaoSudeste:
-            __name = "Região Sudeste"
-            __url = "grande-goiania-e-anapolis/regiao-sudeste"
-            __zone_id = 5309
+        class RegiaoNorte(Location):
+            name = "Região Norte"
+            url = "regiao-norte"
 
-        class RegiaoSudoeste:
-            __name = "Região Sudoeste"
-            __url = "grande-goiania-e-anapolis/regiao-sudoeste"
-            __zone_id = 5310
+        class RegiaoOeste(Location):
+            name = "Região Oeste"
+            url = "regiao-oeste"
 
-        class RegiaoSul:
-            __name = "Região Sul"
-            __url = "grande-goiania-e-anapolis/regiao-sul"
-            __zone_id = 5311
+        class RegiaoSudeste(Location):
+            name = "Região Sudeste"
+            url = "regiao-sudeste"
 
-        class ValeDoMeiaPonte:
-            __name = "Vale do Meia Ponte"
-            __url = "grande-goiania-e-anapolis/vale-do-meia-ponte"
-            __zone_id = 5312
+        class RegiaoSudoeste(Location):
+            name = "Região Sudoeste"
+            url = "regiao-sudoeste"
 
-        class GrandeGoiania:
-            __name = "Grande Goiânia"
-            __url = "grande-goiania-e-anapolis/grande-goiania"
-            __zone_id = 5313
+        class RegiaoSul(Location):
+            name = "Região Sul"
+            url = "regiao-sul"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "grande-goiania-e-anapolis/outras-cidades"
-            __zone_id = 5314
+        class ValeDoMeiaPonte(Location):
+            name = "Vale do Meia Ponte"
+            url = "vale-do-meia-ponte"
 
-    class DDD_64:
-        __name = "Rio Verde, Caldas Novas e região"
-        __url = "regiao-de-rio-verde-e-caldas-novas"
+        class GrandeGoiania(Location):
+            name = "Grande Goiânia"
+            url = "grande-goiania"
 
-        class TodasAsCidades:
-            __name = "Todas as cidades"
-            __url = "regiao-de-rio-verde-e-caldas-novas/todas-as-cidades"
-            __zone_id = 7527
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
+
+    class DDD_64(Location):
+        name = "Rio Verde, Caldas Novas e região"
+        url = "regiao-de-rio-verde-e-caldas-novas"
+
+        class TodasAsCidades(Location):
+            name = "Todas as cidades"
+            url = "todas-as-cidades"

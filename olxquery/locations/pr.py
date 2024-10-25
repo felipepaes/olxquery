@@ -1,152 +1,130 @@
-class PR:
-    __name = "Estado de PR"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_41:
-        __name = "Curitiba e região"
-        __url = "regiao-de-curitiba-e-paranagua"
 
-        class BairroNovo:
-            __name = "Bairro Novo"
-            __url = "regiao-de-curitiba-e-paranagua/bairro-novo"
-            __zone_id = 510
+class PR(Location):
+    name = "Estado de PR"
+    url = "estado-pr"
 
-        class BoaVista:
-            __name = "Boa Vista"
-            __url = "regiao-de-curitiba-e-paranagua/boa-vista"
-            __zone_id = 491
+    class DDD_41(Location):
+        name = "Curitiba e região"
+        url = "regiao-de-curitiba-e-paranagua"
 
-        class Boqueirao:
-            __name = "Boqueirão"
-            __url = "regiao-de-curitiba-e-paranagua/boqueirao"
-            __zone_id = 539
+        class BairroNovo(Location):
+            name = "Bairro Novo"
+            url = "bairro-novo"
 
-        class Cajuru:
-            __name = "Cajuru"
-            __url = "regiao-de-curitiba-e-paranagua/cajuru"
-            __zone_id = 606
+        class BoaVista(Location):
+            name = "Boa Vista"
+            url = "boa-vista"
 
-        class CidadeIndustrial:
-            __name = "Cidade Industrial"
-            __url = "regiao-de-curitiba-e-paranagua/cidade-industrial"
-            __zone_id = 505
+        class Boqueirao(Location):
+            name = "Boqueirão"
+            url = "boqueirao"
 
-        class FazendinhaPortao:
-            __name = "Fazendinha Portão"
-            __url = "regiao-de-curitiba-e-paranagua/fazendinha-portao"
-            __zone_id = 573
+        class Cajuru(Location):
+            name = "Cajuru"
+            url = "cajuru"
 
-        class Matriz:
-            __name = "Matriz"
-            __url = "regiao-de-curitiba-e-paranagua/matriz"
-            __zone_id = 520
+        class CidadeIndustrial(Location):
+            name = "Cidade Industrial"
+            url = "cidade-industrial"
 
-        class Pinheirinho:
-            __name = "Pinheirinho"
-            __url = "regiao-de-curitiba-e-paranagua/pinheirinho"
-            __zone_id = 514
+        class FazendinhaPortao(Location):
+            name = "Fazendinha Portão"
+            url = "fazendinha-portao"
 
-        class SantaFelicidade:
-            __name = "Santa Felicidade"
-            __url = "regiao-de-curitiba-e-paranagua/santa-felicidade"
-            __zone_id = 585
+        class Matriz(Location):
+            name = "Matriz"
+            url = "matriz"
 
-        class GrandeCuritiba:
-            __name = "Grande Curitiba"
-            __url = "regiao-de-curitiba-e-paranagua/grande-curitiba"
-            __zone_id = 544
+        class Pinheirinho(Location):
+            name = "Pinheirinho"
+            url = "pinheirinho"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "regiao-de-curitiba-e-paranagua/outras-cidades"
-            __zone_id = 598
+        class SantaFelicidade(Location):
+            name = "Santa Felicidade"
+            url = "santa-felicidade"
 
-    class DDD_42:
-        __name = "Pta Grossa, Guarapuava e região"
-        __url = "regiao-de-ponta-grossa-e-guarapuava"
+        class GrandeCuritiba(Location):
+            name = "Grande Curitiba"
+            url = "grande-curitiba"
 
-        class RegiaoDeGuarapuava:
-            __name = "Região de Guarapuava"
-            __url = "regiao-de-ponta-grossa-e-guarapuava/regiao-de-guarapuava"
-            __zone_id = 113
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
 
-        class RegiaoDePontaGrossaETelemacoBorba:
-            __name = "Região de Ponta Grossa e Telêmaco Borba"
-            __url = "regiao-de-ponta-grossa-e-guarapuava/regiao-de-ponta-grossa-e-telemaco-borba"
-            __zone_id = 145
+    class DDD_42(Location):
+        name = "Pta Grossa, Guarapuava e região"
+        url = "regiao-de-ponta-grossa-e-guarapuava"
 
-        class SudesteParanaense:
-            __name = "Sudeste Paranaense"
-            __url = "regiao-de-ponta-grossa-e-guarapuava/sudeste-paranaense"
-            __zone_id = 158
+        class RegiaoDeGuarapuava(Location):
+            name = "Região de Guarapuava"
+            url = "regiao-de-guarapuava"
 
-    class DDD_43:
-        __name = "Londrina e região"
-        __url = "regiao-de-londrina"
+        class RegiaoDePontaGrossaETelemacoBorba(Location):
+            name = "Região de Ponta Grossa e Telêmaco Borba"
+            url = "regiao-de-ponta-grossa-e-telemaco-borba"
 
-        class CentroNorteParanaense:
-            __name = "Centro-norte Paranaense"
-            __url = "regiao-de-londrina/centro-norte-paranaense"
-            __zone_id = 286
+        class SudesteParanaense(Location):
+            name = "Sudeste Paranaense"
+            url = "sudeste-paranaense"
 
-        class NordesteParanaense:
-            __name = "Nordeste Paranaense"
-            __url = "regiao-de-londrina/nordeste-paranaense"
-            __zone_id = 321
+    class DDD_43(Location):
+        name = "Londrina e região"
+        url = "regiao-de-londrina"
 
-        class RegiaoDeLondrina:
-            __name = "Região de Londrina"
-            __url = "regiao-de-londrina/regiao-de-londrina"
-            __zone_id = 263
+        class CentroNorteParanaense(Location):
+            name = "Centro-norte Paranaense"
+            url = "centro-norte-paranaense"
 
-    class DDD_44:
-        __name = "Maringá e região"
-        __url = "regiao-de-maringa"
+        class NordesteParanaense(Location):
+            name = "Nordeste Paranaense"
+            url = "nordeste-paranaense"
 
-        class CentroOesteParanaense:
-            __name = "Centro-oeste Paranaense"
-            __url = "regiao-de-maringa/centro-oeste-paranaense"
-            __zone_id = 363
+        class RegiaoDeLondrina(Location):
+            name = "Região de Londrina"
+            url = "regiao-de-londrina"
 
-        class NorteParanaense:
-            __name = "Norte Paranaense"
-            __url = "regiao-de-maringa/norte-paranaense"
-            __zone_id = 399
+    class DDD_44(Location):
+        name = "Maringá e região"
+        url = "regiao-de-maringa"
 
-        class OesteParanaense:
-            __name = "Oeste Paranaense"
-            __url = "regiao-de-maringa/oeste-paranaense"
-            __zone_id = 447
+        class CentroOesteParanaense(Location):
+            name = "Centro-oeste Paranaense"
+            url = "centro-oeste-paranaense"
 
-        class RegiaoDeMaringa:
-            __name = "Região de Maringá"
-            __url = "regiao-de-maringa/regiao-de-maringa"
-            __zone_id = 478
+        class NorteParanaense(Location):
+            name = "Norte Paranaense"
+            url = "norte-paranaense"
 
-    class DDD_45:
-        __name = "Foz do Iguaçu, Cascavel e região"
-        __url = "regiao-de-foz-do-iguacu-e-cascavel"
+        class OesteParanaense(Location):
+            name = "Oeste Paranaense"
+            url = "oeste-paranaense"
 
-        class RegiaoDeCascavel:
-            __name = "Região de Cascavel"
-            __url = "regiao-de-foz-do-iguacu-e-cascavel/regiao-de-cascavel"
-            __zone_id = 243
+        class RegiaoDeMaringa(Location):
+            name = "Região de Maringá"
+            url = "regiao-de-maringa"
 
-        class RegiaoDeFozDoIguacu:
-            __name = "Região de Foz do Iguaçu"
-            __url = "regiao-de-foz-do-iguacu-e-cascavel/regiao-de-foz-do-iguacu"
-            __zone_id = 219
+    class DDD_45(Location):
+        name = "Foz do Iguaçu, Cascavel e região"
+        url = "regiao-de-foz-do-iguacu-e-cascavel"
 
-    class DDD_46:
-        __name = "F. Beltrão e Pato Branco e região"
-        __url = "regiao-de-francisco-beltrao-e-pato-branco"
+        class RegiaoDeCascavel(Location):
+            name = "Região de Cascavel"
+            url = "regiao-de-cascavel"
 
-        class CentroSulParanaense:
-            __name = "Centro-sul Paranaense"
-            __url = "regiao-de-francisco-beltrao-e-pato-branco/centro-sul-paranaense"
-            __zone_id = 173
+        class RegiaoDeFozDoIguacu(Location):
+            name = "Região de Foz do Iguaçu"
+            url = "regiao-de-foz-do-iguacu"
 
-        class SudoesteParanaense:
-            __name = "Sudoeste Paranaense"
-            __url = "regiao-de-francisco-beltrao-e-pato-branco/sudoeste-paranaense"
-            __zone_id = 191
+    class DDD_46(Location):
+        name = "F. Beltrão e Pato Branco e região"
+        url = "regiao-de-francisco-beltrao-e-pato-branco"
+
+        class CentroSulParanaense(Location):
+            name = "Centro-sul Paranaense"
+            url = "centro-sul-paranaense"
+
+        class SudoesteParanaense(Location):
+            name = "Sudoeste Paranaense"
+            url = "sudoeste-paranaense"

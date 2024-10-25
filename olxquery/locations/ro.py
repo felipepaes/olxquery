@@ -1,17 +1,18 @@
-class RO:
-    __name = "Estado de RO"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_69:
-        __name = "Rondônia"
-        __url = "rondônia"
 
-        class PortoVelho:
-            __name = "Porto Velho"
-            __url = "rondonia/porto-velho"
-            __zone_id = 7048
+class RO(Location):
+    name = "Estado de RO"
+    url = "estado-ro"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "rondonia/outras-cidades"
-            __zone_id = 7046
+    class DDD_69(Location):
+        name = "Rondônia"
+        url = "rondônia"
+
+        class PortoVelho(Location):
+            name = "Porto Velho"
+            url = "porto-velho"
+
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"

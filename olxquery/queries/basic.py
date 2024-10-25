@@ -1,5 +1,6 @@
+from olxquery.types import Category, Location
+
 from .base import BaseQuery
-from olxquery.types import Location, Category
 
 
 class BasicQuery(BaseQuery):

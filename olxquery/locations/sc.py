@@ -1,80 +1,70 @@
-class SC:
-    __name = "Estado de SC"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_47:
-        __name = "Norte de Santa Catarina"
-        __url = "norte-de-santa-catarina"
 
-        class RegiaoDeJoinvilleENorteDoEstado:
-            __name = "Região de Joinville e Norte do Estado"
-            __url = "norte-de-santa-catarina/regiao-de-joinville-e-norte-do-estado"
-            __zone_id = 2481
+class SC(Location):
+    name = "Estado de SC"
+    url = "estado-sc"
 
-        class RegiaoDoValeDoItajai:
-            __name = "Região do Vale do Itajaí"
-            __url = "norte-de-santa-catarina/regiao-do-vale-do-itajai"
-            __zone_id = 2426
+    class DDD_47(Location):
+        name = "Norte de Santa Catarina"
+        url = "norte-de-santa-catarina"
 
-    class DDD_48:
-        __name = "Florianópolis e região"
-        __url = "florianopolis-e-regiao"
+        class RegiaoDeJoinvilleENorteDoEstado(Location):
+            name = "Região de Joinville e Norte do Estado"
+            url = "regiao-de-joinville-e-norte-do-estado"
 
-        class Centro:
-            __name = "Centro"
-            __url = "florianopolis-e-regiao/centro"
-            __zone_id = 2561
+        class RegiaoDoValeDoItajai(Location):
+            name = "Região do Vale do Itajaí"
+            url = "regiao-do-vale-do-itajai"
 
-        class Continente:
-            __name = "Continente"
-            __url = "florianopolis-e-regiao/continente"
-            __zone_id = 2519
+    class DDD_48(Location):
+        name = "Florianópolis e região"
+        url = "florianopolis-e-regiao"
 
-        class Leste:
-            __name = "Leste"
-            __url = "florianopolis-e-regiao/leste"
-            __zone_id = 2619
+        class Centro(Location):
+            name = "Centro"
+            url = "centro"
 
-        class Norte:
-            __name = "Norte"
-            __url = "florianopolis-e-regiao/norte"
-            __zone_id = 2541
+        class Continente(Location):
+            name = "Continente"
+            url = "continente"
 
-        class Sul:
-            __name = "Sul"
-            __url = "florianopolis-e-regiao/sul"
-            __zone_id = 2531
+        class Leste(Location):
+            name = "Leste"
+            url = "leste"
 
-        class GrandeFlorianopolis:
-            __name = "Grande Florianópolis"
-            __url = "florianopolis-e-regiao/grande-florianopolis"
-            __zone_id = 2506
+        class Norte(Location):
+            name = "Norte"
+            url = "norte"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "florianopolis-e-regiao/outras-cidades"
-            __zone_id = 2566
+        class Sul(Location):
+            name = "Sul"
+            url = "sul"
 
-    class DDD_49:
-        __name = "Oeste de Santa Catarina"
-        __url = "oeste-de-santa-catarina"
+        class GrandeFlorianopolis(Location):
+            name = "Grande Florianópolis"
+            url = "grande-florianopolis"
 
-        class RegiaoDeChapeco:
-            __name = "Região de Chapecó"
-            __url = "oeste-de-santa-catarina/regiao-de-chapeco"
-            __zone_id = 2333
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
 
-        class RegiaoDeJoacaba:
-            __name = "Região de Joaçaba"
-            __url = "oeste-de-santa-catarina/regiao-de-joacaba"
-            __zone_id = 2303
+    class DDD_49(Location):
+        name = "Oeste de Santa Catarina"
+        url = "oeste-de-santa-catarina"
 
-        class RegiaoDeXanxereEConcordia:
-            __name = "Região de Xanxerê e Concórdia"
-            __url = "oeste-de-santa-catarina/regiao-de-xanxere-e-concordia"
-            __zone_id = 2393
+        class RegiaoDeChapeco(Location):
+            name = "Região de Chapecó"
+            url = "regiao-de-chapeco"
 
-        class RegioesDeCuritibanosECDosLages:
-            __name = "Regiões de Curitibanos e C. dos Lages"
-            __url = "oeste-de-santa-catarina/regioes-de-curitibanos-e-c-dos-lages"
-            __zone_id = 2272
+        class RegiaoDeJoacaba(Location):
+            name = "Região de Joaçaba"
+            url = "regiao-de-joacaba"
+
+        class RegiaoDeXanxereEConcordia(Location):
+            name = "Região de Xanxerê e Concórdia"
+            url = "regiao-de-xanxere-e-concordia"
+
+        class RegioesDeCuritibanosECDosLages(Location):
+            name = "Regiões de Curitibanos e C. dos Lages"
+            url = "regioes-de-curitibanos-e-c-dos-lages"

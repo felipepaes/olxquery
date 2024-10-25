@@ -1,26 +1,26 @@
-class PI:
-    __name = "Estado de PI"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_86:
-        __name = "Teresina, Parnaíba e região"
-        __url = "regiao-de-teresina-e-parnaiba"
 
-        class Teresina:
-            __name = "Teresina"
-            __url = "regiao-de-teresina-e-parnaiba/teresina"
-            __zone_id = 9891
+class PI(Location):
+    name = "Estado de PI"
+    url = "estado-pi"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "regiao-de-teresina-e-parnaiba/outras-cidades"
-            __zone_id = 9889
+    class DDD_86(Location):
+        name = "Teresina, Parnaíba e região"
+        url = "regiao-de-teresina-e-parnaiba"
 
-    class DDD_89:
-        __name = "Picos, Floriano e região"
-        __url = "regiao-de-picos-e-floriano"
+        class Teresina(Location):
+            name = "Teresina"
+            url = "teresina"
 
-        class TodasAsCidades:
-            __name = "Todas as cidades"
-            __url = "regiao-de-picos-e-floriano/todas-as-cidades"
-            __zone_id = 10091
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"
+
+    class DDD_89(Location):
+        name = "Picos, Floriano e região"
+        url = "regiao-de-picos-e-floriano"
+
+        class TodasAsCidades(Location):
+            name = "Todas as cidades"
+            url = "todas-as-cidades"

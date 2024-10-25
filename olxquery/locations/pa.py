@@ -1,35 +1,34 @@
-class PA:
-    __name = "Estado de PA"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_91:
-        __name = "Região de Belém"
-        __url = "regiao-de-belem"
 
-        class Belem:
-            __name = "Belém"
-            __url = "regiao-de-belem/belem"
-            __zone_id = 10944
+class PA(Location):
+    name = "Estado de PA"
+    url = "estado-pa"
 
-        class OutrasCidades:
-            __name = "Outras Cidades"
-            __url = "regiao-de-belem/outras-cidades"
-            __zone_id = 10942
+    class DDD_91(Location):
+        name = "Região de Belém"
+        url = "regiao-de-belem"
 
-    class DDD_93:
-        __name = "Região de Santarém"
-        __url = "regiao-de-santarem"
+        class Belem(Location):
+            name = "Belém"
+            url = "belem"
 
-        class TodasAsCidades:
-            __name = "Todas as cidades"
-            __url = "regiao-de-santarem/todas-as-cidades"
-            __zone_id = 11269
+        class OutrasCidades(Location):
+            name = "Outras Cidades"
+            url = "outras-cidades"
 
-    class DDD_94:
-        __name = "Região de Marabá"
-        __url = "regiao-de-maraba"
+    class DDD_93(Location):
+        name = "Região de Santarém"
+        url = "regiao-de-santarem"
 
-        class TodasAsCidades:
-            __name = "Todas as cidades"
-            __url = "regiao-de-maraba/todas-as-cidades"
-            __zone_id = 11200
+        class TodasAsCidades(Location):
+            name = "Todas as cidades"
+            url = "todas-as-cidades"
+
+    class DDD_94(Location):
+        name = "Região de Marabá"
+        url = "regiao-de-maraba"
+
+        class TodasAsCidades(Location):
+            name = "Todas as cidades"
+            url = "todas-as-cidades"

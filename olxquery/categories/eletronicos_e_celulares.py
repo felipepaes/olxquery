@@ -1,19 +1,35 @@
-class EletronicosECelulares:
-    __name = "Eletrônicos e celulares"
-    __url = "eletronicos-e-celulares"
+from olxquery.types import Category
 
-    class CelularesETelefonia:
-        __name = "Celulares e telefonia"
-        __url = "celulares"
 
-    class ComputadoresEAcessorios:
-        __name = "Computadores e acessórios"
-        __url = "computadores-e-acessorios"
+class EletronicosECelulares(Category):
+    name = "Eletrônicos e celulares"
+    url = "eletronicos-e-celulares"
+    is_root = True
 
-    class AudioTvVideoEFotografia:
-        __name = "Áudio, TV, vídeo e fotografia"
-        __url = "audio-tv-video-e-fotografia"
+    class CelularesETelefonia(Category):
+        name = "Celulares e telefonia"
+        url = "celulares"
 
-    class Videogames:
-        __name = "Videogames"
-        __url = "videogames"
+        class Apple(Category):
+            name = "Celulares Apple"
+            url = "apple"
+
+            class IPhone12(Category):
+                name = "Apple Iphone 12"
+                url = "iphone-12"
+
+    class Games(Category):
+        name = "Games"
+        url = "games"
+
+        class Consoles(Category):
+            name = "Consoles"
+            url = "consoles-de-video-game"
+
+            class Playstation4(Category):
+                name = "Playstation 4"
+                url = "playstation-4"
+
+            class NintendoSwitch(Category):
+                name = "Nintendo Switch"
+                url = "nintendo-switch"

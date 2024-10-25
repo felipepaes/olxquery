@@ -1,150 +1,122 @@
-class RS:
-    __name = "Estado de RS"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_51:
-        __name = "Porto Alegre e região"
-        __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul"
 
-        class CampusPuc:
-            __name = "Campus PUC"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/campus-puc"
-            __zone_id = 4197
+class RS(Location):
+    name = "Estado de RS"
+    url = "estado-rs"
 
-        class Centro:
-            __name = "Centro"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/centro"
-            __zone_id = 4191
+    class DDD_51(Location):
+        name = "Porto Alegre e região"
+        url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul"
 
-        class ExtremoSul:
-            __name = "Extremo Sul"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/extremo-sul"
-            __zone_id = 4213
+        class CampusPuc(Location):
+            name = "Campus PUC"
+            url = "campus-puc"
 
-        class Leste:
-            __name = "Leste"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/leste"
-            __zone_id = 4207
+        class Centro(Location):
+            name = "Centro"
+            url = "centro"
 
-        class MoinhosDeVento:
-            __name = "Moinhos de Vento"
-            __url = (
-                "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/moinhos-de-vento"
-            )
-            __zone_id = 4370
+        class ExtremoSul(Location):
+            name = "Extremo Sul"
+            url = "extremo-sul"
 
-        class Norte:
-            __name = "Norte"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/norte"
-            __zone_id = 4137
+        class Leste(Location):
+            name = "Leste"
+            url = "leste"
 
-        class PraiaDeBelas:
-            __name = "Praia de Belas"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/praia-de-belas"
-            __zone_id = 4131
+        class MoinhosDeVento(Location):
+            name = "Moinhos de Vento"
+            url = "moinhos-de-vento"
 
-        class Sul:
-            __name = "Sul"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/sul"
-            __zone_id = 4221
+        class Norte(Location):
+            name = "Norte"
+            url = "norte"
 
-        class Ufrgs:
-            __name = "UFRGS"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/ufrgs"
-            __zone_id = 4241
+        class PraiaDeBelas(Location):
+            name = "Praia de Belas"
+            url = "praia-de-belas"
 
-        class GrandePortoAlegre:
-            __name = "Grande Porto Alegre"
-            __url = (
-                "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/grande-porto-alegre"
-            )
-            __zone_id = 4159
+        class Sul(Location):
+            name = "Sul"
+            url = "sul"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "regioes-de-porto-alegre-torres-e-santa-cruz-do-sul/outras-cidades"
-            __zone_id = 4244
+        class Ufrgs(Location):
+            name = "UFRGS"
+            url = "ufrgs"
 
-    class DDD_53:
-        __name = "Pelotas, Bagé, Rio Gde e região"
-        __url = "regioes-de-pelotas-rio-grande-e-bage"
+        class GrandePortoAlegre(Location):
+            name = "Grande Porto Alegre"
+            url = "grande-porto-alegre"
 
-        class RegiaoDeBage:
-            __name = "Região de Bagé"
-            __url = "regioes-de-pelotas-rio-grande-e-bage/regiao-de-bage"
-            __zone_id = 4104
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
 
-        class SudesteRioGrandense:
-            __name = "Sudeste Rio-grandense"
-            __url = "regioes-de-pelotas-rio-grande-e-bage/sudeste-rio-grandense"
-            __zone_id = 4109
+    class DDD_53(Location):
+        name = "Pelotas, Bagé, Rio Gde e região"
+        url = "regioes-de-pelotas-rio-grande-e-bage"
 
-    class DDD_54:
-        __name = "Caxias do Sul e região"
-        __url = "regioes-de-caxias-do-sul-e-passo-fundo"
+        class RegiaoDeBage(Location):
+            name = "Região de Bagé"
+            url = "regiao-de-bage"
 
-        class RegiaoDeCarazinho:
-            __name = "Região de Carazinho"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-carazinho"
-            __zone_id = 4688
+        class SudesteRioGrandense(Location):
+            name = "Sudeste Rio-grandense"
+            url = "sudeste-rio-grandense"
 
-        class RegiaoDeCaxiasDoSul:
-            __name = "Região de Caxias do Sul"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-caxias-do-sul"
-            __zone_id = 4610
+    class DDD_54(Location):
+        name = "Caxias do Sul e região"
+        url = "regioes-de-caxias-do-sul-e-passo-fundo"
 
-        class RegiaoDeErechim:
-            __name = "Região de Erechim"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-erechim"
-            __zone_id = 4650
+        class RegiaoDeCarazinho(Location):
+            name = "Região de Carazinho"
+            url = "regiao-de-carazinho"
 
-        class RegiaoDeGramadoECanela:
-            __name = "Região de Gramado e Canela"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-gramado-e-canela"
-            __zone_id = 4645
+        class RegiaoDeCaxiasDoSul(Location):
+            name = "Região de Caxias do Sul"
+            url = "regiao-de-caxias-do-sul"
 
-        class RegiaoDeNaoMeToqueESoledade:
-            __name = "Região de Não Me Toque e Soledade"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-nao-me-toque-e-soledade"
-            __zone_id = 4545
+        class RegiaoDeErechim(Location):
+            name = "Região de Erechim"
+            url = "regiao-de-erechim"
 
-        class RegiaoDePassoFundo:
-            __name = "Região de Passo Fundo"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-passo-fundo"
-            __zone_id = 4564
+        class RegiaoDeGramadoECanela(Location):
+            name = "Região de Gramado e Canela"
+            url = "regiao-de-gramado-e-canela"
 
-        class RegiaoDeVacaria:
-            __name = "Região de Vacaria"
-            __url = "regioes-de-caxias-do-sul-e-passo-fundo/regiao-de-vacaria"
-            __zone_id = 4591
+        class RegiaoDeNaoMeToqueESoledade(Location):
+            name = "Região de Não Me Toque e Soledade"
+            url = "regiao-de-nao-me-toque-e-soledade"
 
-    class DDD_55:
-        __name = "Sta Maria, Cruz Alta e região"
-        __url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta"
+        class RegiaoDePassoFundo(Location):
+            name = "Região de Passo Fundo"
+            url = "regiao-de-passo-fundo"
 
-        class NoroesteDoEstado:
-            __name = "Noroeste do Estado"
-            __url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta/noroeste-do-estado"
-            __zone_id = 4487
+        class RegiaoDeVacaria(Location):
+            name = "Região de Vacaria"
+            url = "regiao-de-vacaria"
 
-        class NorteDoEstado:
-            __name = "Norte do Estado"
-            __url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta/norte-do-estado"
-            __zone_id = 4438
+    class DDD_55(Location):
+        name = "Sta Maria, Cruz Alta e região"
+        url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta"
 
-        class OesteDoEstado:
-            __name = "Oeste do Estado"
-            __url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta/oeste-do-estado"
-            __zone_id = 4528
+        class NoroesteDoEstado(Location):
+            name = "Noroeste do Estado"
+            url = "noroeste-do-estado"
 
-        class RegiaoDeCruzAltaEIjui:
-            __name = "Região de Cruz Alta e Ijuí"
-            __url = "regioes-de-santa-maria-uruguaiana-e-cruz-alta/regiao-de-cruz-alta-e-ijui"
-            __zone_id = 4380
+        class NorteDoEstado(Location):
+            name = "Norte do Estado"
+            url = "norte-do-estado"
 
-        class RegiaoDeSantaMaria:
-            __name = "Região de Santa Maria"
-            __url = (
-                "regioes-de-santa-maria-uruguaiana-e-cruz-alta/regiao-de-santa-maria"
-            )
-            __zone_id = 4405
+        class OesteDoEstado(Location):
+            name = "Oeste do Estado"
+            url = "oeste-do-estado"
+
+        class RegiaoDeCruzAltaEIjui(Location):
+            name = "Região de Cruz Alta e Ijuí"
+            url = "regiao-de-cruz-alta-e-ijui"
+
+        class RegiaoDeSantaMaria(Location):
+            name = "Região de Santa Maria"
+            url = "regiao-de-santa-maria"

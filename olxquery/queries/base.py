@@ -1,11 +1,11 @@
 import random
 import re
 import urllib.request
-import xml.etree.ElementTree as ET
-from abc import ABC, abstractmethod
+from abc import ABC
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse, urlunsplit
-from olxquery.types import Location, Category
+
+from olxquery.types import Category, Location
 
 
 class BaseQuery(ABC):
@@ -16,11 +16,12 @@ class BaseQuery(ABC):
     location: Location | None
     category: Category | None
 
-    @property
-    @classmethod
-    @abstractmethod
-    def QUERY_PARAMS(cls) -> dict[str, str]:
-        return NotImplementedError
+    def __init_subclass__(cls, **kwargs):
+        super().__init_subclass__(**kwargs)
+        if not hasattr(cls, "QUERY_PARAMS") or not isinstance(cls.QUERY_PARAMS, dict):
+            raise TypeError(
+                f"Class {cls.__name__} must define a class-level dictionary 'QUERY_PARAMS'."
+            )
 
     def __init__(self, **kwargs):
         if kwargs:
@@ -45,32 +46,19 @@ class BaseQuery(ABC):
             raise e
         return user_agent
 
-    def __get_state_uf(self):
-        # if self.location is not None:
-        if hasattr(self, "location"):
-            uf = self.location.__module__.split(".")[-1]
-            return uf
-        return None
-
     def __get_netloc(self):
         return self.__NETLOC
-
-    def __get_obj_prop(self, cls, prop="url"):
-        url = getattr(cls, f"_{cls.__name__}__{prop}")
-        return url
 
     def __get_path(self):
         path = []
 
         # if self.category is not None:
         if hasattr(self, "category"):
-            path.append(self.__get_obj_prop(self.category))
+            path.append(self.category.get_url())
 
         # if self.location is not None:
         if hasattr(self, "location"):
-            uf = self.__get_state_uf()
-            path.append(f"estado-{uf}")
-            path.append(self.__get_obj_prop(self.location))
+            path.append(self.location.get_url())
 
         if len(path) == 1:
             return path[0]
@@ -80,27 +68,18 @@ class BaseQuery(ABC):
         return ""
 
     def __get_query(self):
+        # Get queryable properties
+        # by checking QUERY_PARAMS
         queries = {
-            k: v
-            for (k, v) in vars(
-                self
-            ).items()  # Get queryable properties filtering from __QUERY_PARAMS
-            if k in self.QUERY_PARAMS.keys() and v is not None
+            k: v for (k, v) in vars(self).items() if k in self.QUERY_PARAMS.keys() and v is not None
         }
 
         if queries is not None:
             query = {}
-            for (
-                k,
-                v,
-            ) in (
-                queries.items()
-            ):  # new dictionary with correct keys from __QUERY_PARAMS
+            # new dictionary with correct keys from QUERY_PARAMS
+            for k, v in queries.items():
                 query[self.QUERY_PARAMS[k]] = v
             return urlencode(query)
-        # tuple_version = [(k, v) for k, v in {k: v for (k, v) in vars(self).items()  # Same but with list of tuples
-        #                                      if k in self.__QUERY_PARAMS.keys()
-        #                                      and v is not None}.items()]
 
     def __build_url(self):
         netloc = self.__get_netloc()
@@ -108,14 +87,16 @@ class BaseQuery(ABC):
         query = self.__get_query()
         url = urlunsplit((self.__SCHEME, netloc, path, query, None))
 
+        # TODO: remove check for urls after removing the:
+        # TODO: remove __urls property
+        # TODO: __user agent functionality and ua_file.txt
+        # TODO:remove __get_html and everything that hits the internet
         if len(self.__urls) == 0:
             self.__urls.append(url)
         return url
 
     def __get_html(self, url):
-        req = urllib.request.Request(
-            url, None, headers={"User-Agent": self.__user_agent}
-        )
+        req = urllib.request.Request(url, None, headers={"User-Agent": self.__user_agent})
         response = urllib.request.urlopen(req)
         html = response.read().decode("utf-8")
         return html

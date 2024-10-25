@@ -1,17 +1,18 @@
-class RR:
-    __name = "Estado de RR"
-    __url = ""
+from olxquery.types import Location
 
-    class DDD_95:
-        __name = "Roraima"
-        __url = "roraima"
 
-        class BoaVista:
-            __name = "Boa Vista"
-            __url = "roraima/boa-vista"
-            __zone_id = 5120
+class RR(Location):
+    name = "Estado de RR"
+    url = "estado-rr"
 
-        class OutrasCidades:
-            __name = "Outras cidades"
-            __url = "roraima/outras-cidades"
-            __zone_id = 5121
+    class DDD_95(Location):
+        name = "Roraima"
+        url = "roraima"
+
+        class BoaVista(Location):
+            name = "Boa Vista"
+            url = "boa-vista"
+
+        class OutrasCidades(Location):
+            name = "Outras cidades"
+            url = "outras-cidades"
