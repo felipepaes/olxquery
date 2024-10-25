@@ -1,15 +1,10 @@
-import random
-import re
-import urllib.request
 from abc import ABC
-from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse, urlunsplit
+from urllib.parse import urlencode, urlunsplit
 
 from olxquery.types import Category, Location
 
 
 class BaseQuery(ABC):
-    __UA_FILE = "ua_file.txt"
     __SCHEME = "https"
     __NETLOC = "olx.com.br"
 
@@ -27,24 +22,10 @@ class BaseQuery(ABC):
         if kwargs:
             self.__init_atributes(kwargs)
 
-        self.__urls = []
-        self.__urls_generated = False
-        self.__user_agent = self.__get_user_agent()
-
     def __init_atributes(self, kwargs: dict):
         for k, v in kwargs.items():
             if v is not None:
                 setattr(self, k, v)
-
-    def __get_user_agent(self):
-        try:
-            filename = Path(__file__).resolve().parent.parent / self.__UA_FILE
-            with open(filename, "r") as f:
-                lines = f.readlines()
-                user_agent = random.choice(lines)[:-2]
-        except Exception as e:
-            raise e
-        return user_agent
 
     def __get_netloc(self):
         return self.__NETLOC
@@ -86,61 +67,11 @@ class BaseQuery(ABC):
         path = self.__get_path()
         query = self.__get_query()
         url = urlunsplit((self.__SCHEME, netloc, path, query, None))
-
-        # TODO: remove check for urls after removing the:
-        # TODO: remove __urls property
-        # TODO: __user agent functionality and ua_file.txt
-        # TODO:remove __get_html and everything that hits the internet
-        if len(self.__urls) == 0:
-            self.__urls.append(url)
         return url
-
-    def __get_html(self, url):
-        req = urllib.request.Request(url, None, headers={"User-Agent": self.__user_agent})
-        response = urllib.request.urlopen(req)
-        html = response.read().decode("utf-8")
-        return html
-
-    def __append_page_to_query(self, url, page_number):
-        parsed_url = urlparse(url)
-        query = dict(parse_qsl(parsed_url.query))
-        query.update({"o": page_number})
-        parsed_url = parsed_url._replace(query=urlencode(query))
-        url = urlunparse(parsed_url)
-        return url
-
-    def __generate_urls(self):
-        url = self.__build_url()
-        html = self.__get_html(url)
-
-        re_pattern = r"data-lurker_position=\"(\d+)"
-        matches = re.findall(re_pattern, html)
-
-        if matches:
-            last_page = int(matches[-1])
-            for n in range(
-                2, last_page + 1
-            ):  # 2 because we already have the first page + 1 because of how range works
-                self.__urls.append(self.__append_page_to_query(url, n))
-        else:
-            self.__urls.append(url)
-
-        self.__urls_generated = True
-        return self.__urls
 
     @property
     def url(self):
-        if len(self.__urls) > 0:
-            return self.__urls[0]
-        else:
-            return self.__build_url()
-
-    @property
-    def urls(self):
-        if self.__urls_generated:
-            return self.__urls
-        else:
-            return self.__generate_urls()
+        return self.__build_url()
 
     def __repr__(self):
         return f"<{self.__class__.__name__} object {id(self)!r}>"
