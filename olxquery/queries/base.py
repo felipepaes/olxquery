@@ -20,12 +20,9 @@ class BaseQuery(ABC):
 
     def __init__(self, **kwargs):
         if kwargs:
-            self.__init_atributes(kwargs)
-
-    def __init_atributes(self, kwargs: dict):
-        for k, v in kwargs.items():
-            if v is not None:
-                setattr(self, k, v)
+            for k, v in kwargs.items():
+                if v is not None:
+                    setattr(self, k, v)
 
     def __get_netloc(self):
         return self.__NETLOC
