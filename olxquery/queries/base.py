@@ -88,9 +88,9 @@ class BaseQuery(ABC):
         url = urlunsplit((self.__SCHEME, netloc, path, query, None))
 
         # TODO: remove check for urls after removing the:
-        # - __urls property
-        # - __user agent functionality
-        # - __get_html and everything that hits the internet
+        # TODO: remove __urls property
+        # TODO: __user agent functionality and ua_file.txt
+        # TODO:remove __get_html and everything that hits the internet
         if len(self.__urls) == 0:
             self.__urls.append(url)
         return url

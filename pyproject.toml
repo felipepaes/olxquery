@@ -9,12 +9,25 @@ dependencies = []
 requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
-src_paths = ["olxquery", "tests"]
-
 
 [build-system]
 requires = ["pdm-pep517>=1.0"]
 build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.3",
+    "tox>=4.23.2",
+]
+lint = [
+    "ruff>=0.7.1",
+    "isort>=5.13.2",
+    "pre-commit>=4.0.1",
+]
+build = [
+    "python-semantic-release>=9.12.0",
+]
+
 
 [tool.ruff]
 lint.select = ["F", "E", "W"]
@@ -23,17 +36,9 @@ line-length = 100
 [tool.isort]
 profile = "black"
 
-[tool.pdm.dev-dependencies]
-test = [
-    "pytest>=7.2.1",
-]
-format = [
-    "ruff>=0.6.9",
-    "isort>=5.13.2",
-]
-release = [
-    "python-semantic-release>=9.11.0",
-]
 
 [tool.pdm.scripts]
 test = "pytest -vvv"
+ruff = "ruff check"
+isort = "isort olxquery tests --check-only --diff"
+lint = {composite = ["ruff", "isort"]}
