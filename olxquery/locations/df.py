@@ -7,13 +7,13 @@ class DF(Location):
 
     class DDD_61(Location):
         name = "Distrito Federal e região"
-        url = "distrito-federal-e-região"
+        url = "distrito-federal-e-regiao"
 
         class Brasilia(Location):
             name = "Brasília"
             url = "brasilia"
 
-            class LargoNorte(Location):
+            class LagoNorte(Location):
                 name = "RA XVIII Lago Norte"
                 url = "ra-xviii---lago-norte"
 

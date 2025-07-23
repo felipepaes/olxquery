@@ -31,9 +31,7 @@ def test_get_url():
     expected = f"{SomeType.url}/{SomeType.Level1_1.url}"
     assert expected == SomeType.Level1_1.get_url()
     # two levels
-    expected = (
-        f"{SomeType.url}/{SomeType.Level1_2.url}/{SomeType.Level1_2.Level1_2_1.url}"
-    )
+    expected = f"{SomeType.url}/{SomeType.Level1_2.url}/{SomeType.Level1_2.Level1_2_1.url}"
     assert expected == SomeType.Level1_2.Level1_2_1.get_url()
 
 
