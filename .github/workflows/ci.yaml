@@ -37,6 +37,6 @@ jobs:
 
       - name: Lint code
         run: pdm run lint
-      
+
       - name: Run tests
-        run: pdm run test
+        run: pdm run tox

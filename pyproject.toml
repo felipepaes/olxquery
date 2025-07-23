@@ -6,7 +6,7 @@ authors = [
     {name = "Felipe", email = "felipepaes@tutanota.com"},
 ]
 dependencies = []
-requires-python = ">=3.9,<=3.13"
+requires-python = ">=3.10,<=3.13.5"
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -43,7 +43,7 @@ profile = "black"
 legacy_tox_ini = """
     [tox]
     min_version = 4.0
-    env_list = py{39,310,311,312,313}
+    env_list = py{310,311,312,313}
 
     [testenv]
     deps = 
@@ -55,7 +55,9 @@ legacy_tox_ini = """
 [tool.pdm.scripts]
 test = "pytest -s -vvv --cov=olxquery"
 tox = "tox"
-ruff = "ruff check"
-isort = "isort olxquery tests --check-only --diff"
-lint = {composite = ["ruff", "isort"]}
-
+ruff-check = "ruff check"
+ruff-format = "ruff format"
+isort-check = "isort olxquery tests --check-only --diff"
+isort-format = "isort olxquery tests"
+lint = {composite = ["ruff-check", "isort-check"]}
+format = {composite = ["ruff-format", "isort-format"]}
